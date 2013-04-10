@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package subscriber;
+package br.ufrn.subscriber;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
