@@ -83,7 +83,7 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(403, 303));
+        setResizable(false);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/subscribers1.png"))); // NOI18N
 
@@ -100,7 +100,7 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                 .addComponent(jLabel1))
         );
 
-        jButton1.setText("OFF");
+        jButton1.setText("Desconectado");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -114,18 +114,18 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jButton1)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -166,7 +166,7 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                     .addComponent(jLabel5)
                     .addComponent(jLabel4)
                     .addComponent(jLabel2))
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
 
         jTextArea1.setColumns(20);
@@ -203,7 +203,7 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(27, 27, 27)
                 .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -212,8 +212,8 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
 
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(jButton1.getText() == "OFF"){
-            jButton1.setText("ON");
+        if(jButton1.getText() == "Desconectado"){
+            jButton1.setText("Conectado");
             jButton1.setBackground(Color.GREEN);
             jButton1.setForeground(Color.RED);
             jLabel3.setText("Clique para se desconectar do Hub");
@@ -223,7 +223,7 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
             jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
             jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
             jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
-            jButton1.setText("OFF");
+            jButton1.setText("Desconectado");
             jButton1.setBackground(Color.RED);
             jButton1.setForeground(Color.GREEN);
             jLabel3.setText("Clique para se conectar ao Hub");

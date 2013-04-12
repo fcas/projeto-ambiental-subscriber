@@ -11,18 +11,18 @@ import br.ufrn.subscriber.Subscriber;
  *
  * @author Jorge
  */
-public class MonitorMensagem extends Subscriber{
+public class AtualizaSubscriber extends Subscriber{
 
     
-    SecretariaMeioAmbiente secretaria = new SecretariaMeioAmbiente();
+    SecretariaMeioAmbiente subscriber = new SecretariaMeioAmbiente();
     
-    public MonitorMensagem(String topic) {
+    public AtualizaSubscriber(String topic) {
         super(topic);
     }
 
     @Override
     public void tratarMensagem(String mensagem) {
-        secretaria.exibirInformacao(mensagem);
+        subscriber.exibirInformacao(mensagem);
     }
     
 
