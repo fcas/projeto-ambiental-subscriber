@@ -18,6 +18,45 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
     public SecretariaMeioAmbiente() {
         initComponents();
     }
+    
+    
+    
+    public void exibirInformacao(String informacao){
+        String valores[] = informacao.split(";");
+            //valores[0] = area
+            //valores[1] = nome da function
+            //valores[2] = estado do contexto ou informacao relevante
+        
+            if(valores[1].equals("pollutionMonitor")) {
+                
+                if(valores[2].equals("TRAFEGO")){
+                //seta fluxo de veiculos
+                    
+                }else {
+                    //seta o nivel de poluicao com: valores[2]
+                }
+            }
+            else if(valores[1].equals("willRainMonitor")){
+                //seta vai chover
+                
+            }
+            else if(valores[1].equals("acidRainMonitor")) {
+                
+                if(valores[2].equals("AQUI")){
+                    //seta que tem chuva acida da area
+                    
+                }else {
+                    //seta que pode ter chuva acida em outra area
+                    
+                }
+                    
+            }
+            else if(valores[1].equals("noiseMonitor")) {
+                //seta que o barulho esta alem do permitido
+                //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+                
+            }
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
