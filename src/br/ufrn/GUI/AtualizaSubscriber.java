@@ -19,13 +19,11 @@ public class AtualizaSubscriber extends Subscriber{
     public AtualizaSubscriber(String topic) {
         super(topic);
     }
-
+    
+    
     @Override
     public void tratarMensagem(String mensagem) {
         subscriber.exibirInformacao(mensagem);
     }
-    
-
-    
     
 }

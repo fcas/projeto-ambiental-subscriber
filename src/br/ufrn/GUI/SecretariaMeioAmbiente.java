@@ -12,21 +12,22 @@ import java.awt.Color;
  */
 public class SecretariaMeioAmbiente extends javax.swing.JFrame {
 
+    public AtualizaSubscriber conexao = new AtualizaSubscriber(null);
+    
     /**
      * Creates new form SecretariaMeioAmbiente
      */
     public SecretariaMeioAmbiente() {
         initComponents();
     }
-    
-    
+      
     
     public void exibirInformacao(String informacao){
         String valores[] = informacao.split(";");
             //valores[0] = area
             //valores[1] = nome da function
             //valores[2] = estado do contexto ou informacao relevante
-        
+            
             if(valores[1].equals("pollutionMonitor")) {
                 
                 if(valores[2].equals("TRAFEGO")){
@@ -57,7 +58,8 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                 
             }
     }
-
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -101,6 +103,16 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
         );
 
         jButton1.setText("Desconectado");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+        jButton1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jButton1StateChanged(evt);
+            }
+        });
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -212,12 +224,15 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
 
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(jButton1.getText() == "Desconectado"){
+        if(jButton1.getText().equals("Desconectado")){
+            conexao.subscribe();
             jButton1.setText("Conectado");
             jButton1.setBackground(Color.GREEN);
             jButton1.setForeground(Color.RED);
             jLabel3.setText("Clique para se desconectar do Hub");
-        }else{
+        }
+        else{
+            conexao.unsubscribe();
             jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
             jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
             jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
@@ -229,6 +244,14 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
             jLabel3.setText("Clique para se conectar ao Hub");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jButton1StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1StateChanged
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments
