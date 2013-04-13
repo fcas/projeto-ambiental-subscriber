@@ -5,6 +5,7 @@
 package br.ufrn.GUI;
 
 import java.awt.Color;
+import java.util.Calendar;
 
 /**
  *
@@ -13,6 +14,7 @@ import java.awt.Color;
 public class SecretariaMeioAmbiente extends javax.swing.JFrame {
 
     public AtualizaSubscriber conexao = new AtualizaSubscriber(null);
+    private String Texto;
     
     /**
      * Creates new form SecretariaMeioAmbiente
@@ -27,35 +29,277 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
             //valores[0] = area
             //valores[1] = nome da function
             //valores[2] = estado do contexto ou informacao relevante
+            //valores[3] = direção do vento
             
             if(valores[1].equals("pollutionMonitor")) {
-                
                 if(valores[2].equals("TRAFEGO")){
+                    if(valores[0].equals(1)){
+                    labelCarroA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
+                        Texto = Texto + "Quantidade de carros muito grande na área " + valores[0];
+                        jTextArea1.setText("" + Texto);
                 //seta fluxo de veiculos
-                    
-                }else {
+                    }
+                    else if(valores[0].equals(2)){
+                    labelCarroA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
+                        Texto = Texto + "Quantidade de carros muito grande na área " + valores[0];
+                        jTextArea1.setText("" + Texto);
+                //seta fluxo de veiculos
+                    }
+                    else if(valores[0].equals(3)){
+                    labelCarroA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
+                        Texto = Texto + "Quantidade de carros muito grande na área " + valores[0];
+                        jTextArea1.setText("" + Texto);
+                //seta fluxo de veiculos
+                    }
+                    else if(valores[0].equals(4)){
+                    labelCarroA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
+                        Texto = Texto + "Quantidade de carros muito grande na área " + valores[0];
+                        jTextArea1.setText("" + Texto);
+                //seta fluxo de veiculos
+                    }
+                }else{
+                    if(valores[0].equals(1)){
+                    if(valores[2] == "Boa"){
+                        labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Regular"){
+                        labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Inadequada"){
+                        labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Má"){
+                        labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Péssima"){
+                        labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
                     //seta o nivel de poluicao com: valores[2]
                 }
+                }
+                    if(valores[0].equals(2)){
+                    if(valores[2] == "Boa"){
+                        labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Regular"){
+                        labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Inadequada"){
+                        labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Má"){
+                        labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Péssima"){
+                        labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    //seta o nivel de poluicao com: valores[2]
+                }
+                    if(valores[0].equals(3)){
+                    if(valores[2] == "Boa"){
+                        labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Regular"){
+                        labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Inadequada"){
+                        labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Má"){
+                        labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Péssima"){
+                        labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    //seta o nivel de poluicao com: valores[2]
+                }
+                    if(valores[0].equals(4)){
+                    if(valores[2] == "Boa"){
+                        labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Regular"){
+                        labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Inadequada"){
+                        labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Má"){
+                        labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    else if(valores[2] == "Péssima"){
+                        labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
+                            Texto = Texto + "Qualidade do ar na área " + valores[0];
+                            jTextArea1.setText("" + Texto);
+                    }
+                    //seta o nivel de poluicao com: valores[2]
+                }
+                    
+                    
+                    
             }
-            else if(valores[1].equals("willRainMonitor")){
+            if(valores[1].equals("willRainMonitor")){
+                if(valores[0].equals(1)){
+                labelNuvChuA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
+                    Texto = Texto + "Chuva na área " + valores[0];
+                    jTextArea1.setText("" + Texto);
                 //seta vai chover
                 
             }
-            else if(valores[1].equals("acidRainMonitor")) {
+                if(valores[0].equals(2)){
+                labelNuvChuA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
+                    Texto = Texto + "Chuva na área " + valores[0];
+                    jTextArea1.setText("" + Texto);
+                //seta vai chover
                 
+            }
+                if(valores[0].equals(3)){
+                labelNuvChuA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
+                    Texto = Texto + "Chuva na área " + valores[0];
+                    jTextArea1.setText("" + Texto);
+                //seta vai chover
+                
+            }
+                if(valores[0].equals(4)){
+                labelNuvChuA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
+                    Texto = Texto + "Chuva na área " + valores[0];
+                    jTextArea1.setText("" + Texto);
+                //seta vai chover
+                
+            }
+           }
+            else if(valores[1].equals("acidRainMonitor")) {
                 if(valores[2].equals("AQUI")){
+                    if(valores[0].equals(1)){
+                    labelNuvAciA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
+                       Texto = Texto + "Chuva Ácida na área " + valores[0];
+                       jTextArea1.setText("" + Texto);
                     //seta que tem chuva acida da area
-                    
+                     }
+                    if(valores[0].equals(2)){
+                    labelNuvAciA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
+                       Texto = Texto + "Chuva Ácida na área " + valores[0];
+                       jTextArea1.setText("" + Texto);
+                    //seta que tem chuva acida da area
+                     }
+                    if(valores[0].equals(3)){
+                    labelNuvAciA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
+                       Texto = Texto + "Chuva Ácida na área " + valores[0];
+                       jTextArea1.setText("" + Texto);
+                    //seta que tem chuva acida da area
+                     }
+                    if(valores[0].equals(4)){
+                    labelNuvAciA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
+                       Texto = Texto + "Chuva Ácida na área " + valores[0];
+                       jTextArea1.setText("" + Texto);
+                    //seta que tem chuva acida da area
+                     }
                 }else {
+                    if(valores[0].equals(1)){
+                    labelNuvMovA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
+                        Texto = Texto + "Chuva Ácida se movendo para a direção " + valores[3];
+                        jTextArea1.setText("" + Texto);
                     //seta que pode ter chuva acida em outra area
                     
                 }
+                    if(valores[0].equals(2)){
+                    labelNuvMovA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
+                        Texto = Texto + "Chuva Ácida se movendo para a direção " + valores[3];
+                        jTextArea1.setText("" + Texto);
+                    //seta que pode ter chuva acida em outra area
+                    
+                }
+                    if(valores[0].equals(3)){
+                    labelNuvMovA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
+                        Texto = Texto + "Chuva Ácida se movendo para a direção " + valores[3];
+                        jTextArea1.setText("" + Texto);
+                    //seta que pode ter chuva acida em outra area
+                    
+                }
+                    if(valores[0].equals(4)){
+                    labelNuvMovA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
+                        Texto = Texto + "Chuva Ácida se movendo para a direção " + valores[3];
+                        jTextArea1.setText("" + Texto);
+                    //seta que pode ter chuva acida em outra area
+                    
+                }
+               }
                     
             }
             else if(valores[1].equals("noiseMonitor")) {
+                if(valores[0].equals(1)){
+                 if(Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6){
+                labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                    Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00";
+                    jTextArea1.setText("" + Texto);
                 //seta que o barulho esta alem do permitido
                 //OBS: somente setar esse icone se a hora for entre: 22h e 6h
-                
+                 }
+                }
+                if(valores[0].equals(2)){
+                 if(Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6){
+                labelBuzinaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                    Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00";
+                    jTextArea1.setText("" + Texto);
+                //seta que o barulho esta alem do permitido
+                //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+                 }
+                }
+                if(valores[0].equals(3)){
+                 if(Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6){
+                labelBuzinaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                    Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00";
+                    jTextArea1.setText("" + Texto);
+                //seta que o barulho esta alem do permitido
+                //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+                 }
+                }
+                if(valores[0].equals(4)){
+                 if(Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6){
+                labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                    Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00";
+                    jTextArea1.setText("" + Texto);
+                //seta que o barulho esta alem do permitido
+                //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+                 }
+                }
             }
     }
     
@@ -75,14 +319,36 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        labelBuzinaA1 = new javax.swing.JLabel();
+        labelNuvChuA1 = new javax.swing.JLabel();
+        labelNuvPolA1 = new javax.swing.JLabel();
+        labelCarroA1 = new javax.swing.JLabel();
+        labelNuvAciA1 = new javax.swing.JLabel();
+        labelNuvMovA1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jPanel6 = new javax.swing.JPanel();
+        labelBuzinaA3 = new javax.swing.JLabel();
+        labelNuvChuA3 = new javax.swing.JLabel();
+        labelNuvPolA3 = new javax.swing.JLabel();
+        labelCarroA3 = new javax.swing.JLabel();
+        labelNuvAciA3 = new javax.swing.JLabel();
+        labelNuvMovA3 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        labelBuzinaA4 = new javax.swing.JLabel();
+        labelNuvChuA4 = new javax.swing.JLabel();
+        labelNuvPolA4 = new javax.swing.JLabel();
+        labelCarroA4 = new javax.swing.JLabel();
+        labelNuvAciA4 = new javax.swing.JLabel();
+        labelNuvMovA4 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        labelBuzinaA2 = new javax.swing.JLabel();
+        labelNuvChuA2 = new javax.swing.JLabel();
+        labelNuvPolA2 = new javax.swing.JLabel();
+        labelCarroA2 = new javax.swing.JLabel();
+        labelNuvAciA2 = new javax.swing.JLabel();
+        labelNuvMovA2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -141,15 +407,19 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png"))); // NOI18N
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Area 1"));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png"))); // NOI18N
+        labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png"))); // NOI18N
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png"))); // NOI18N
+        labelNuvChuA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png"))); // NOI18N
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png"))); // NOI18N
+        labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png"))); // NOI18N
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png"))); // NOI18N
+        labelCarroA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png"))); // NOI18N
+
+        labelNuvAciA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png"))); // NOI18N
+
+        labelNuvMovA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -157,45 +427,194 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2)
+                .addComponent(labelBuzinaA1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel4)
+                .addComponent(labelNuvChuA1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel5)
+                .addComponent(labelNuvPolA1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel6)
+                .addComponent(labelCarroA1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel7)
+                .addComponent(labelNuvAciA1)
+                .addGap(18, 18, 18)
+                .addComponent(labelNuvMovA1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel2))
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(labelNuvMovA1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelNuvAciA1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelCarroA1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelNuvPolA1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelNuvChuA1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelBuzinaA1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder("Area 3"));
+
+        labelBuzinaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png"))); // NOI18N
+
+        labelNuvChuA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png"))); // NOI18N
+
+        labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png"))); // NOI18N
+
+        labelCarroA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png"))); // NOI18N
+
+        labelNuvAciA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png"))); // NOI18N
+
+        labelNuvMovA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelBuzinaA3)
+                .addGap(18, 18, 18)
+                .addComponent(labelNuvChuA3)
+                .addGap(18, 18, 18)
+                .addComponent(labelNuvPolA3)
+                .addGap(18, 18, 18)
+                .addComponent(labelCarroA3)
+                .addGap(18, 18, 18)
+                .addComponent(labelNuvAciA3)
+                .addGap(18, 18, 18)
+                .addComponent(labelNuvMovA3)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(labelNuvMovA3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelNuvAciA3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelCarroA3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelNuvPolA3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelNuvChuA3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelBuzinaA3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder("Area 4"));
+
+        labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png"))); // NOI18N
+
+        labelNuvChuA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png"))); // NOI18N
+
+        labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png"))); // NOI18N
+
+        labelCarroA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png"))); // NOI18N
+
+        labelNuvAciA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png"))); // NOI18N
+
+        labelNuvMovA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelBuzinaA4)
+                .addGap(18, 18, 18)
+                .addComponent(labelNuvChuA4)
+                .addGap(18, 18, 18)
+                .addComponent(labelNuvPolA4)
+                .addGap(18, 18, 18)
+                .addComponent(labelCarroA4)
+                .addGap(18, 18, 18)
+                .addComponent(labelNuvAciA4)
+                .addGap(18, 18, 18)
+                .addComponent(labelNuvMovA4)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(labelNuvMovA4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelNuvAciA4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelCarroA4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelNuvPolA4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelNuvChuA4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelBuzinaA4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(jScrollPane1)
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Area 2"));
+
+        labelBuzinaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png"))); // NOI18N
+
+        labelNuvChuA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png"))); // NOI18N
+
+        labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png"))); // NOI18N
+
+        labelCarroA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png"))); // NOI18N
+
+        labelNuvAciA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png"))); // NOI18N
+
+        labelNuvMovA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelBuzinaA2)
+                .addGap(18, 18, 18)
+                .addComponent(labelNuvChuA2)
+                .addGap(18, 18, 18)
+                .addComponent(labelNuvPolA2)
+                .addGap(18, 18, 18)
+                .addComponent(labelCarroA2)
+                .addGap(18, 18, 18)
+                .addComponent(labelNuvAciA2)
+                .addGap(18, 18, 18)
+                .addComponent(labelNuvMovA2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(labelNuvMovA2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelNuvAciA2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelCarroA2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelNuvPolA2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelNuvChuA2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelBuzinaA2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -206,6 +625,7 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -215,7 +635,9 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
                 .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -233,11 +655,30 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
         }
         else{
             conexao.unsubscribe();
-            jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
-            jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
-            jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
-            jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
-            jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
+            labelCarroA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
+            labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+            labelNuvChuA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
+            labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
+            labelNuvAciA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
+            labelNuvMovA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png")));
+            labelCarroA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
+            labelBuzinaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+            labelNuvChuA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
+            labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
+            labelNuvAciA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
+            labelNuvMovA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png")));
+            labelCarroA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
+            labelBuzinaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+            labelNuvChuA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
+            labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
+            labelNuvAciA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
+            labelNuvMovA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png")));
+            labelCarroA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
+            labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+            labelNuvChuA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
+            labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
+            labelNuvAciA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
+            labelNuvMovA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png")));
             jButton1.setText("Desconectado");
             jButton1.setBackground(Color.RED);
             jButton1.setForeground(Color.GREEN);
@@ -290,17 +731,39 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel labelBuzinaA1;
+    private javax.swing.JLabel labelBuzinaA2;
+    private javax.swing.JLabel labelBuzinaA3;
+    private javax.swing.JLabel labelBuzinaA4;
+    private javax.swing.JLabel labelCarroA1;
+    private javax.swing.JLabel labelCarroA2;
+    private javax.swing.JLabel labelCarroA3;
+    private javax.swing.JLabel labelCarroA4;
+    private javax.swing.JLabel labelNuvAciA1;
+    private javax.swing.JLabel labelNuvAciA2;
+    private javax.swing.JLabel labelNuvAciA3;
+    private javax.swing.JLabel labelNuvAciA4;
+    private javax.swing.JLabel labelNuvChuA1;
+    private javax.swing.JLabel labelNuvChuA2;
+    private javax.swing.JLabel labelNuvChuA3;
+    private javax.swing.JLabel labelNuvChuA4;
+    private javax.swing.JLabel labelNuvMovA1;
+    private javax.swing.JLabel labelNuvMovA2;
+    private javax.swing.JLabel labelNuvMovA3;
+    private javax.swing.JLabel labelNuvMovA4;
+    private javax.swing.JLabel labelNuvPolA1;
+    private javax.swing.JLabel labelNuvPolA2;
+    private javax.swing.JLabel labelNuvPolA3;
+    private javax.swing.JLabel labelNuvPolA4;
     // End of variables declaration//GEN-END:variables
 }
