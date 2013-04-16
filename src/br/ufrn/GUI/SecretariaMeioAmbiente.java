@@ -29,7 +29,8 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
         //valores[1] = nome da function
         //valores[2] = estado do contexto ou informacao relevante
         //valores[3] = direção do vento
-
+        
+        //===pollutionMonitor
         if (valores[1].equals("pollutionMonitor")) {
             if (valores[2].equals("TRAFEGO_ON")) {
                 if (valores[0].equals(Integer.toString(1))) {
@@ -164,10 +165,8 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                 }
                 //seta o nivel de poluicao com: valores[2]
             }
-
-
-
         }
+        //===willRainMonitor
         if (valores[1].equals("willRainMonitor")) {
             if (valores[2].equals("RAIN_ON")) {
                 if (valores[0].equals(Integer.toString(1))) {
@@ -226,7 +225,9 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                     //seta vai chover
                 }
             }
-        } else if (valores[1].equals("acidRainMonitor")) {
+        } 
+        //===acidRainMonitor
+        else if (valores[1].equals("acidRainMonitor")) {
             if (valores[2].equals("AQUI")) {
                 if (valores[0].equals(Integer.toString(1))) {
                     labelNuvAciA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
@@ -310,8 +311,10 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                 }
             }
 
-        } else if (valores[1].equals("noiseMonitor")) {
-            if (valores[1].equals("NOISE_ON")){
+        } 
+        //===noiseMonitor
+        else if (valores[1].equals("noiseMonitor")) {
+            if (valores[2].equals("NOISE_ON")){
                 if (valores[0].equals(Integer.toString(1))) {
                     if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
                         labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
@@ -348,10 +351,10 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                         //OBS: somente setar esse icone se a hora for entre: 22h e 6h
                     }
                 }
-        }else if (valores[1].equals("NOISE_OFF")) {
-            //
+            }else if (valores[2].equals("NOISE_OFF")) {
+            //setar os icones de noise OFF para cada area
         
-            if (valores[0].equals(Integer.toString(1))) {
+                if (valores[0].equals(Integer.toString(1))) {
                     
                 }
                 if (valores[0].equals(Integer.toString(2))) {
@@ -363,9 +366,9 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                 if (valores[0].equals(Integer.toString(4))) {
                    
                 }
+            }
         }
     }
-}
 
     /**
      * This method is called from within the constructor to initialize the form.
