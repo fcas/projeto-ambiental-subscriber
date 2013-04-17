@@ -5,32 +5,21 @@
 package br.ufrn.GUI;
 
 import java.awt.Color;
-import java.util.Calendar;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  *
  * @author Zeff
  */
 public class SecretariaMeioAmbiente extends javax.swing.JFrame {
-    
-    public static final String POLLUTION = "pollutionMonitor";
-    public static final String WILL_RAIN = "willRainMonitor";
-    public static final String ACID_RAIN = "acidRainMonitor";
-    public static final String NOISE = "noiseMonitor";
-    public static final String TEMPERATURE = "temperatureMonitor";
-    public static final String BEATIFUL_WEATHER = "beautifulWeatherMonitor";
-    public static final String IS_FIRE = "isFireMonitor";
-    public static final String HOT_DRY = "hotDryMonitor";
-    public static final String TRASH = "trashMonitor";
-    public static final String GATHERING = "trashGathering";
 
-    AtualizaSubscriber subscriberPollution;
-    AtualizaSubscriber subscriberaWillRain;
-    AtualizaSubscriber subscriberAcidRain;
-    AtualizaSubscriber subscriberNoise;
+    private AtualizaSubscriber subscriberPollution;
+    private AtualizaSubscriber subscriberaWillRain;
+    private AtualizaSubscriber subscriberAcidRain;
+    private AtualizaSubscriber subscriberNoise;
     
- 
-   
     private String Texto;
 
     /**
@@ -138,19 +127,19 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                     labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
-                } else if (valores[2] == "REGULAR") {
+                } else if (valores[2].equals("REGULAR")) {
                     labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
-                } else if (valores[2] == "INADEQUADA") {
+                } else if (valores[2].equals("INADEQUADA")) {
                     labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
-                } else if (valores[2] == "MA") {
+                } else if (valores[2].equals("MA")) {
                     labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
-                } else if (valores[2] == "PESSIMA") {
+                } else if (valores[2].equals("PESSIMA")) {
                     labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
@@ -158,23 +147,23 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                 //seta o nivel de poluicao com: valores[2]
             }
             if (valores[0].equals(Integer.toString(4))) {
-                if (valores[2] == "BOA") {
+                if (valores[2].equals("BOA")) {
                     labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
-                } else if (valores[2] == "REGULAR") {
+                } else if (valores[2].equals("REGULAR")) {
                     labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
-                } else if (valores[2] == "INADEQUADA") {
+                } else if (valores[2].equals("INADEQUADA")) {
                     labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
-                } else if (valores[2] == "MA") {
+                } else if (valores[2].equals("MA")) {
                     labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
-                } else if (valores[2] == "PESSIMA") {
+                } else if (valores[2].equals("PESSIMA")) {
                     labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
@@ -190,28 +179,24 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                     Texto = Texto + "Chuva na área " + valores[0];
                     jTextArea1.setText("" + Texto);
                     //seta vai chover
-
                 }
                 if (valores[0].equals(Integer.toString(2))) {
                     labelNuvChuA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
                     Texto = Texto + "Chuva na área " + valores[0];
                     jTextArea1.setText("" + Texto);
                     //seta vai chover
-
                 }
                 if (valores[0].equals(Integer.toString(3))) {
                     labelNuvChuA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
                     Texto = Texto + "Chuva na área " + valores[0];
                     jTextArea1.setText("" + Texto);
                     //seta vai chover
-
                 }
                 if (valores[0].equals(Integer.toString(4))) {
                     labelNuvChuA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
                     Texto = Texto + "Chuva na área " + valores[0];
                     jTextArea1.setText("" + Texto);
                     //seta vai chover
-
                 }
             } else if (valores[2].equals("RAIN_OFF")) {
                 //setar o icone OFF de chuva em todas as areas
@@ -310,9 +295,12 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
 
         } //===noiseMonitor
         else if (valores[1].equals("noiseMonitor")) {
+            DateFormat df = new SimpleDateFormat("H");
+            String hora = df.format(new Date());
+
             if (valores[2].equals("NOISE_ON")) {
                 if (valores[0].equals(Integer.toString(1))) {
-                    if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
+                    if (Integer.parseInt(hora) > 22 && Integer.parseInt(hora) < 6) {
                         labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                         Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00";
                         jTextArea1.setText("" + Texto);
@@ -320,8 +308,9 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                         //OBS: somente setar esse icone se a hora for entre: 22h e 6h
                     }
                 }
+
                 if (valores[0].equals(Integer.toString(2))) {
-                    if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
+                    if (Integer.parseInt(hora) > 22 && Integer.parseInt(hora) < 6) {
                         labelBuzinaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                         Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00";
                         jTextArea1.setText("" + Texto);
@@ -330,7 +319,7 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                     }
                 }
                 if (valores[0].equals(Integer.toString(3))) {
-                    if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
+                    if (Integer.parseInt(hora) > 22 && Integer.parseInt(hora) < 6) {
                         labelBuzinaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                         Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00";
                         jTextArea1.setText("" + Texto);
@@ -339,7 +328,7 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                     }
                 }
                 if (valores[0].equals(Integer.toString(4))) {
-                    if (Calendar.HOUR_OF_DAY > 22 && Calendar.HOUR_OF_DAY < 6) {
+                    if (Integer.parseInt(hora) > 22 && Integer.parseInt(hora) < 6) {
                         labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                         Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00";
                         jTextArea1.setText("" + Texto);
@@ -707,29 +696,28 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if (jButton1.getText().equals("Desconectado")) {
-            
-            subscriberAcidRain= new AtualizaSubscriber(ACID_RAIN, this);
-            subscriberNoise = new AtualizaSubscriber(NOISE, this);
-            subscriberPollution = new AtualizaSubscriber(POLLUTION, this);
-            subscriberaWillRain = new AtualizaSubscriber(WILL_RAIN, this);
-            
+
+            subscriberAcidRain = new AtualizaSubscriber(AtualizaSubscriber.ACID_RAIN, this);
+            subscriberNoise = new AtualizaSubscriber(AtualizaSubscriber.NOISE, this);
+            subscriberPollution = new AtualizaSubscriber(AtualizaSubscriber.POLLUTION, this);
+            subscriberaWillRain = new AtualizaSubscriber(AtualizaSubscriber.WILL_RAIN, this);
+
             subscriberAcidRain.subscribe();
             subscriberNoise.subscribe();
             subscriberPollution.subscribe();
             subscriberaWillRain.subscribe();
-            
-            
+
             jButton1.setText("Conectado");
             jButton1.setBackground(Color.GREEN);
             jButton1.setForeground(Color.RED);
             jLabel3.setText("Clique para se desconectar do Hub");
         } else {
-            
+
             subscriberAcidRain.unsubscribe();
             subscriberNoise.unsubscribe();
             subscriberPollution.unsubscribe();
             subscriberaWillRain.unsubscribe();
-            
+
             labelCarroA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
             labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
             labelNuvChuA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
