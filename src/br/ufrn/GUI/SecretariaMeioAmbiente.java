@@ -80,11 +80,11 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                         labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
                         Texto = Texto + "Qualidade do ar na área " + valores[0];
                         jTextArea1.setText("" + Texto);
-                    } else if (valores[2].equals("MÁ")) {
+                    } else if (valores[2].equals("MA")) {
                         labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
                         Texto = Texto + "Qualidade do ar na área " + valores[0];
                         jTextArea1.setText("" + Texto);
-                    } else if (valores[2].equals("PÉSSIMA")) {
+                    } else if (valores[2].equals("PESSIMA")) {
                         labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
                         Texto = Texto + "Qualidade do ar na área " + valores[0];
                         jTextArea1.setText("" + Texto);
@@ -105,11 +105,11 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                     labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
-                } else if (valores[2].equals("MÁ")) {
+                } else if (valores[2].equals("MA")) {
                     labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
-                } else if (valores[2].equals("PÉSSIMA")) {
+                } else if (valores[2].equals("PESSIMA")) {
                     labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
@@ -129,11 +129,11 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                     labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
-                } else if (valores[2] == "MÁ") {
+                } else if (valores[2] == "MA") {
                     labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
-                } else if (valores[2] == "PÉSSIMA") {
+                } else if (valores[2] == "PESSIMA") {
                     labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
@@ -153,11 +153,11 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                     labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
-                } else if (valores[2] == "MÁ") {
+                } else if (valores[2] == "MA") {
                     labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
-                } else if (valores[2] == "PÉSSIMA") {
+                } else if (valores[2] == "PESSIMA") {
                     labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
                     Texto = Texto + "Qualidade do ar na área " + valores[0];
                     jTextArea1.setText("" + Texto);
