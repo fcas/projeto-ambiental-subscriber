@@ -13,7 +13,7 @@ public class AtualizaSubscriber extends Subscriber{
     public static final String ACID_RAIN = "acidRainMonitor";
     public static final String NOISE = "noiseMonitor";
     public static final String TEMPERATURE = "temperatureMonitor";
-    public static final String BEATIFUL_WEATHER = "beautifulWeatherMonitor";
+    public static final String BEAUTIFUL_WEATHER = "beautifulWeatherMonitor";
     public static final String IS_FIRE = "isFireMonitor";
     public static final String HOT_DRY = "hotDryMonitor";
     public static final String TRASH = "trashMonitor";
