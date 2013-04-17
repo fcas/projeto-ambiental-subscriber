@@ -19,7 +19,7 @@ public class EsperarAtualizacao extends Thread{
     
     private ServerSocket ServerSocket; 
     private TratarMensagem tratarMensagem;
-
+    
     public EsperarAtualizacao(int porta, TratarMensagem tratarMensagem) {
         try {
             ServerSocket = new ServerSocket(porta);
