@@ -6,24 +6,22 @@ package br.ufrn.GUI;
 
 import br.ufrn.GUI.SecretariaMeioAmbiente;
 import br.ufrn.subscriber.Subscriber;
-
-/**
- *
- * @author Jorge
- */
+ 
 public class AtualizaSubscriber extends Subscriber{
 
     
-    SecretariaMeioAmbiente subscriber = new SecretariaMeioAmbiente();
+    SecretariaMeioAmbiente secretariaMeioAmbiente;
+   
     
-    public AtualizaSubscriber(String topic) {
+    public AtualizaSubscriber(String topic, SecretariaMeioAmbiente secretariaMeioAmbiente) {
         super(topic);
+        this.secretariaMeioAmbiente = secretariaMeioAmbiente;
     }
     
     
     @Override
     public void tratarMensagem(String mensagem) {
-        subscriber.exibirInformacao(mensagem);
+        secretariaMeioAmbiente.exibirInformacao(mensagem);
     }
     
 }

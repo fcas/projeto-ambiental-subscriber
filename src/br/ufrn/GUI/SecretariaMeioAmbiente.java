@@ -12,8 +12,25 @@ import java.util.Calendar;
  * @author Zeff
  */
 public class SecretariaMeioAmbiente extends javax.swing.JFrame {
+    
+    public static final String POLLUTION = "pollutionMonitor";
+    public static final String WILL_RAIN = "willRainMonitor";
+    public static final String ACID_RAIN = "acidRainMonitor";
+    public static final String NOISE = "noiseMonitor";
+    public static final String TEMPERATURE = "temperatureMonitor";
+    public static final String BEATIFUL_WEATHER = "beautifulWeatherMonitor";
+    public static final String IS_FIRE = "isFireMonitor";
+    public static final String HOT_DRY = "hotDryMonitor";
+    public static final String TRASH = "trashMonitor";
+    public static final String GATHERING = "trashGathering";
 
-    public AtualizaSubscriber conexao = new AtualizaSubscriber(null);
+    AtualizaSubscriber subscriberPollution;
+    AtualizaSubscriber subscriberaWillRain;
+    AtualizaSubscriber subscriberAcidRain;
+    AtualizaSubscriber subscriberNoise;
+    
+ 
+   
     private String Texto;
 
     /**
@@ -690,13 +707,29 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if (jButton1.getText().equals("Desconectado")) {
-            conexao.subscribe();
+            
+            subscriberAcidRain= new AtualizaSubscriber(ACID_RAIN, this);
+            subscriberNoise = new AtualizaSubscriber(NOISE, this);
+            subscriberPollution = new AtualizaSubscriber(POLLUTION, this);
+            subscriberaWillRain = new AtualizaSubscriber(WILL_RAIN, this);
+            
+            subscriberAcidRain.subscribe();
+            subscriberNoise.subscribe();
+            subscriberPollution.subscribe();
+            subscriberaWillRain.subscribe();
+            
+            
             jButton1.setText("Conectado");
             jButton1.setBackground(Color.GREEN);
             jButton1.setForeground(Color.RED);
             jLabel3.setText("Clique para se desconectar do Hub");
         } else {
-            conexao.unsubscribe();
+            
+            subscriberAcidRain.unsubscribe();
+            subscriberNoise.unsubscribe();
+            subscriberPollution.unsubscribe();
+            subscriberaWillRain.unsubscribe();
+            
             labelCarroA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
             labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
             labelNuvChuA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
