@@ -304,7 +304,7 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
 
             if (valores[2].equals("NOISE_ON")) {
                 if (valores[0].equals(Integer.toString(1))) {
-                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
+                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
                         labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                         Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
                         jTextArea1.setText("" + Texto);
@@ -314,7 +314,7 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                 }
 
                 if (valores[0].equals(Integer.toString(2))) {
-                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
+                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
                         labelBuzinaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                         Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
                         jTextArea1.setText("" + Texto);
@@ -323,7 +323,7 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                     }
                 }
                 if (valores[0].equals(Integer.toString(3))) {
-                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
+                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
                         labelBuzinaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                         Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
                         jTextArea1.setText("" + Texto);
@@ -332,7 +332,7 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                     }
                 }
                 if (valores[0].equals(Integer.toString(4))) {
-                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
+                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
                         labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
                         Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
                         jTextArea1.setText("" + Texto);
