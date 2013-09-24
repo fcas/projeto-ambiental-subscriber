@@ -21,7 +21,7 @@ public abstract class Subscriber extends TratarMensagem{
 
     private Client client = Client.create();
     private EsperarAtualizacao esperarAtualizacao;
-    private static String URL_BASE_HUB = "http://127.0.0.1:8084/hub/";
+    private static String URL_BASE_HUB = "http://localhost:8080/hub/";
     
     
     public Subscriber(String topic) {
