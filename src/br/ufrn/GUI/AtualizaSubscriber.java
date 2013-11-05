@@ -5,8 +5,8 @@
 package br.ufrn.GUI;
 
 import br.ufrn.subscriber.Subscriber;
- 
-public class AtualizaSubscriber extends Subscriber{
+
+public class AtualizaSubscriber extends Subscriber {
 
     public static final String POLLUTION = "pollutionMonitor";
     public static final String WILL_RAIN = "willRainMonitor";
@@ -18,20 +18,15 @@ public class AtualizaSubscriber extends Subscriber{
     public static final String HOT_DRY = "hotDryMonitor";
     public static final String TRASH = "trashMonitor";
     public static final String GATHERING = "trashGathering";
-    
-    
     SecretariaMeioAmbiente subscriber;
-   
-    
+
     public AtualizaSubscriber(String topic, SecretariaMeioAmbiente secretariaMeioAmbiente) {
         super(topic);
         this.subscriber = secretariaMeioAmbiente;
     }
-    
-    
+
     @Override
     public void tratarMensagem(String mensagem) {
         subscriber.exibirInformacao(mensagem);
     }
-    
 }

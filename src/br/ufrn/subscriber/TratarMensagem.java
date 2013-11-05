@@ -9,6 +9,6 @@ package br.ufrn.subscriber;
  * @author Jorge
  */
 public abstract class TratarMensagem {
-    
+
     public abstract void tratarMensagem(String mensagem);
 }
