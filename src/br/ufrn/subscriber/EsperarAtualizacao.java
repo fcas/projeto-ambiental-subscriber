@@ -50,7 +50,7 @@ public class EsperarAtualizacao extends Thread {
                 Logger.getLogger(EsperarAtualizacao.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-
+ 
 
     }
 
