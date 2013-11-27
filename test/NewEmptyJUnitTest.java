@@ -21,7 +21,8 @@ import static org.junit.Assert.*;
 public class NewEmptyJUnitTest {
     SubscribeBean sb = new SubscribeBean();
     SecretariaMeioAmbiente sec = new SecretariaMeioAmbiente();
-    Subscriber s = new AtualizaSubscriber("tópico", sec);
+    Subscriber s = new AtualizaSubscriber("topico", sec);
+    
     public NewEmptyJUnitTest() {
     }
     
