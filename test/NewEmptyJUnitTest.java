@@ -51,12 +51,12 @@ public class NewEmptyJUnitTest {
         assertEquals("tópico", sb.getTopic());
     }
     
-    @Test
-    public void testSubscriber(){
+//    @Test
+//    public void testSubscriber(){
 //        s.subscribe();
 //        s.unsubscribe();
 //        s.tratarMensagem("tópico");
-    }
+//    }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
