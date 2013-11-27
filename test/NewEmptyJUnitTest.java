@@ -45,10 +45,11 @@ public class NewEmptyJUnitTest {
     public void testSubscribeBean(){
         sb.setPort(11);
         assertEquals(11, sb.getPort());
-        sb.setAndress("endereço");
-        assertEquals("endereço", sb.getAndress());
-        sb.setTopic("tópico");
-        assertEquals("tópico", sb.getTopic());
+        sb.setAndress("endereco");
+        assertEquals("endereco", sb.getAndress());
+        sb.setTopic("topico");
+        assertEquals("topico", sb.getTopic());
+        
     }
     
     @Test
@@ -94,6 +95,7 @@ public class NewEmptyJUnitTest {
         sec.exibirInformacao("2;noiseMonitor;NOISE_OFF");
         sec.exibirInformacao("3;noiseMonitor;NOISE_OFF");
         sec.exibirInformacao("4;noiseMonitor;NOISE_OFF");
+        
         
         
     }
