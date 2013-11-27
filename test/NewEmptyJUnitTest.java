@@ -3,6 +3,10 @@
  * and open the template in the editor.
  */
 
+import br.ufrn.GUI.AtualizaSubscriber;
+import br.ufrn.GUI.SecretariaMeioAmbiente;
+import br.ufrn.subscriber.SubscribeBean;
+import br.ufrn.subscriber.Subscriber;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -15,7 +19,9 @@ import static org.junit.Assert.*;
  * @author felipe
  */
 public class NewEmptyJUnitTest {
-    
+    SubscribeBean sb = new SubscribeBean();
+    SecretariaMeioAmbiente sec = new SecretariaMeioAmbiente();
+    Subscriber s = new AtualizaSubscriber("tópico", sec);
     public NewEmptyJUnitTest() {
     }
     
@@ -36,8 +42,20 @@ public class NewEmptyJUnitTest {
     }
     
     @Test
+    public void testSubscribeBean(){
+        sb.setPort(11);
+        assertEquals(11, sb.getPort());
+        sb.setAndress("endereço");
+        assertEquals("endereço", sb.getAndress());
+        sb.setTopic("tópico");
+        assertEquals("tópico", sb.getTopic());
+    }
+    
+    @Test
     public void testSubscriber(){
-        assertEquals("1", "1");
+//        s.subscribe();
+//        s.unsubscribe();
+//        s.tratarMensagem("tópico");
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
