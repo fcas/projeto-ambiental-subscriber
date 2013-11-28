@@ -421,7 +421,66 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
 
         } //===noiseMonitor
         else if (valores[1].equals("noiseMonitor")) {
+<<<<<<< HEAD
             monitorDeBarulho(valores);
+=======
+            DateFormat df = new SimpleDateFormat("H");
+            String hora = df.format(new Date());
+
+            if (valores[2].equals("NOISE_ON")) {
+                if (valores[0].equals(Integer.toString(1))) {
+                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
+                        labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                        Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
+                        jTextArea1.setText("" + Texto);
+                        //seta que o barulho esta alem do permitido
+                        //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+                    }
+                }
+
+                if (valores[0].equals(Integer.toString(2))) {
+                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
+                        labelBuzinaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                        Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
+                        jTextArea1.setText("" + Texto);
+                        //seta que o barulho esta alem do permitido
+                        //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+                    }
+                }
+                if (valores[0].equals(Integer.toString(3))) {
+                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
+                        labelBuzinaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                        Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
+                        jTextArea1.setText("" + Texto);
+                        //seta que o barulho esta alem do permitido
+                        //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+                    }
+                }
+                if (valores[0].equals(Integer.toString(4))) {
+                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
+                        labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                        Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
+                        jTextArea1.setText("" + Texto);
+                        //seta que o barulho esta alem do permitido
+                        //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+                    }
+                }
+            } else if (valores[2].equals("NOISE_OFF")) {
+                //setar os icones de noise OFF para cada area
+                if (valores[0].equals(Integer.toString(1))) {
+                    labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+                }
+                if (valores[0].equals(Integer.toString(2))) {
+                    labelBuzinaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+                }
+                if (valores[0].equals(Integer.toString(3))) {
+                    labelBuzinaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+                }
+                if (valores[0].equals(Integer.toString(4))) {
+                    labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+                }
+            }
+>>>>>>> df0d41925ccd9d818439fd66e9b2734e032c05e9
         }
     }
 
