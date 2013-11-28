@@ -18,12 +18,12 @@ import static org.junit.Assert.*;
  *
  * @author felipe
  */
-public class NewEmptyJUnitTest {
+public class SubscriberTest {
     SubscribeBean sb = new SubscribeBean();
     SecretariaMeioAmbiente sec = new SecretariaMeioAmbiente();
     Subscriber s = new AtualizaSubscriber("topico", sec);
     
-    public NewEmptyJUnitTest() {
+    public SubscriberTest() {
     }
     
     @BeforeClass
