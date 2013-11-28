@@ -33,7 +33,7 @@ public abstract class Subscriber extends TratarMensagem {
     public void subscribe() {
         WebResource resource = client.resource(URL_BASE_HUB + "subscribe");
         resource.put(subscribe);
-        esperarAtualizações();
+        esperarAtualizacoes();
     }
 
     public void unsubscribe() {
@@ -43,7 +43,7 @@ public abstract class Subscriber extends TratarMensagem {
         esperarAtualizacao.destroy();
     }
 
-    private void esperarAtualizações() {
+    private void esperarAtualizacoes() {
         esperarAtualizacao = new EsperarAtualizacao(subscribe.getPort(), this);
 
         esperarAtualizacao.start();
