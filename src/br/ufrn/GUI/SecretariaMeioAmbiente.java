@@ -421,9 +421,9 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
 
         } //===noiseMonitor
         else if (valores[1].equals("noiseMonitor")) {
-<<<<<<< HEAD
+
             monitorDeBarulho(valores);
-=======
+
             DateFormat df = new SimpleDateFormat("H");
             String hora = df.format(new Date());
 
@@ -480,7 +480,7 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
                     labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
                 }
             }
->>>>>>> df0d41925ccd9d818439fd66e9b2734e032c05e9
+
         }
     }
 
