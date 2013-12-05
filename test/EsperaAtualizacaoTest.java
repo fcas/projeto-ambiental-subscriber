@@ -21,7 +21,7 @@ import static org.junit.Assert.*;
  * @author felipe
  */
 public class EsperaAtualizacaoTest {
-    
+ /*   
     public TratarMensagem msg;
     public EsperarAtualizacao ea; 
     public Socket socket;
@@ -89,5 +89,5 @@ public class EsperaAtualizacaoTest {
          }
         
         assertTrue(thrown);
-    }
+    }*/
 }
