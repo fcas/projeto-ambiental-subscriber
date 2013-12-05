@@ -21,8 +21,8 @@ import static org.junit.Assert.*;
 public class SubscriberTest {
 
     SubscribeBean sb = new SubscribeBean();
-    SecretariaMeioAmbiente sec = new SecretariaMeioAmbiente();
-    Subscriber s = new AtualizaSubscriber("topico", sec);
+    SecretariaMeioAmbiente sec;
+    Subscriber s;
 
     public SubscriberTest() {
     }
@@ -37,6 +37,9 @@ public class SubscriberTest {
 
     @Before
     public void setUp() {
+        
+        sec = new SecretariaMeioAmbiente();
+        s = new AtualizaSubscriber("topico", sec);
     }
 
     @After
@@ -59,46 +62,46 @@ public class SubscriberTest {
         boolean passou = true;
         try {
             sec.exibirInformacao("1;pollutionMonitor;TRAFEGO_ON");
-            sec.exibirInformacao("2;pollutionMonitor;TRAFEGO_ON");
-            sec.exibirInformacao("3;pollutionMonitor;TRAFEGO_ON");
-            sec.exibirInformacao("4;pollutionMonitor;TRAFEGO_ON");
-            sec.exibirInformacao("1;pollutionMonitor;TRAFEGO_OFF");
-            sec.exibirInformacao("2;pollutionMonitor;TRAFEGO_OFF");
-            sec.exibirInformacao("3;pollutionMonitor;TRAFEGO_OFF");
-            sec.exibirInformacao("4;pollutionMonitor;TRAFEGO_OFF");
-
-            sec.exibirInformacao("1;willRainMonitor;RAIN_ON");
-            sec.exibirInformacao("2;willRainMonitor;RAIN_ON");
-            sec.exibirInformacao("3;willRainMonitor;RAIN_ON");
-            sec.exibirInformacao("4;willRainMonitor;RAIN_ON");
-            sec.exibirInformacao("1;willRainMonitor;RAIN_OFF");
-            sec.exibirInformacao("2;willRainMonitor;RAIN_OFF");
-            sec.exibirInformacao("3;willRainMonitor;RAIN_OFF");
-            sec.exibirInformacao("4;willRainMonitor;RAIN_OFF");
-
-
-            sec.exibirInformacao("1;acidRainMonitor;AQUI;teste");
-            sec.exibirInformacao("2;acidRainMonitor;AQUI;teste");
-            sec.exibirInformacao("3;acidRainMonitor;AQUI;teste");
-            sec.exibirInformacao("4;acidRainMonitor;AQUI;teste");
-            sec.exibirInformacao("1;acidRainMonitor;OUTRO;teste");
-            sec.exibirInformacao("2;acidRainMonitor;OUTRO;teste");
-            sec.exibirInformacao("3;acidRainMonitor;OUTRO;teste");
-            sec.exibirInformacao("4;acidRainMonitor;OUTRO;teste");
-            sec.exibirInformacao("1;acidRainMonitor;ACID_OFF;teste");
-            sec.exibirInformacao("2;acidRainMonitor;ACID_OFF;teste");
-            sec.exibirInformacao("3;acidRainMonitor;ACID_OFF;teste");
-            sec.exibirInformacao("4;acidRainMonitor;ACID_OFF;teste");
-
-
-            sec.exibirInformacao("1;noiseMonitor;NOISE_ON");
-            sec.exibirInformacao("2;noiseMonitor;NOISE_ON");
-            sec.exibirInformacao("3;noiseMonitor;NOISE_ON");
-            sec.exibirInformacao("4;noiseMonitor;NOISE_ON");
-            sec.exibirInformacao("1;noiseMonitor;NOISE_OFF");
-            sec.exibirInformacao("2;noiseMonitor;NOISE_OFF");
-            sec.exibirInformacao("3;noiseMonitor;NOISE_OFF");
-            sec.exibirInformacao("4;noiseMonitor;NOISE_OFF");
+//            sec.exibirInformacao("2;pollutionMonitor;TRAFEGO_ON");
+//            sec.exibirInformacao("3;pollutionMonitor;TRAFEGO_ON");
+//            sec.exibirInformacao("4;pollutionMonitor;TRAFEGO_ON");
+//            sec.exibirInformacao("1;pollutionMonitor;TRAFEGO_OFF");
+//            sec.exibirInformacao("2;pollutionMonitor;TRAFEGO_OFF");
+//            sec.exibirInformacao("3;pollutionMonitor;TRAFEGO_OFF");
+//            sec.exibirInformacao("4;pollutionMonitor;TRAFEGO_OFF");
+//
+//            sec.exibirInformacao("1;willRainMonitor;RAIN_ON");
+//            sec.exibirInformacao("2;willRainMonitor;RAIN_ON");
+//            sec.exibirInformacao("3;willRainMonitor;RAIN_ON");
+//            sec.exibirInformacao("4;willRainMonitor;RAIN_ON");
+//            sec.exibirInformacao("1;willRainMonitor;RAIN_OFF");
+//            sec.exibirInformacao("2;willRainMonitor;RAIN_OFF");
+//            sec.exibirInformacao("3;willRainMonitor;RAIN_OFF");
+//            sec.exibirInformacao("4;willRainMonitor;RAIN_OFF");
+//
+//
+//            sec.exibirInformacao("1;acidRainMonitor;AQUI;teste");
+//            sec.exibirInformacao("2;acidRainMonitor;AQUI;teste");
+//            sec.exibirInformacao("3;acidRainMonitor;AQUI;teste");
+//            sec.exibirInformacao("4;acidRainMonitor;AQUI;teste");
+//            sec.exibirInformacao("1;acidRainMonitor;OUTRO;teste");
+//            sec.exibirInformacao("2;acidRainMonitor;OUTRO;teste");
+//            sec.exibirInformacao("3;acidRainMonitor;OUTRO;teste");
+//            sec.exibirInformacao("4;acidRainMonitor;OUTRO;teste");
+//            sec.exibirInformacao("1;acidRainMonitor;ACID_OFF;teste");
+//            sec.exibirInformacao("2;acidRainMonitor;ACID_OFF;teste");
+//            sec.exibirInformacao("3;acidRainMonitor;ACID_OFF;teste");
+//            sec.exibirInformacao("4;acidRainMonitor;ACID_OFF;teste");
+//
+//
+//            sec.exibirInformacao("1;noiseMonitor;NOISE_ON");
+//            sec.exibirInformacao("2;noiseMonitor;NOISE_ON");
+//            sec.exibirInformacao("3;noiseMonitor;NOISE_ON");
+//            sec.exibirInformacao("4;noiseMonitor;NOISE_ON");
+//            sec.exibirInformacao("1;noiseMonitor;NOISE_OFF");
+//            sec.exibirInformacao("2;noiseMonitor;NOISE_OFF");
+//            sec.exibirInformacao("3;noiseMonitor;NOISE_OFF");
+//            sec.exibirInformacao("4;noiseMonitor;NOISE_OFF");
         } catch (NullPointerException e) {
             passou = false;
         }
