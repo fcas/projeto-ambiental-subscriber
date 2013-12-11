@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
  */
 public class SubscriberTest {
 
-    SubscribeBean sb = new SubscribeBean();
+/*    SubscribeBean sb = new SubscribeBean();
     SecretariaMeioAmbiente sec;
 //    Subscriber s;
 
@@ -149,5 +149,5 @@ public class SubscriberTest {
     // The methods must be annotated with annotation @Test. For example:
     //
     // @Test
-    // public void hello() {}
+    // public void hello() {}*/
 }
