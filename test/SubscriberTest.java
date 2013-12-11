@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
  */
 public class SubscriberTest {
 
-//    SubscribeBean sb = new SubscribeBean();
+    SubscribeBean sb = new SubscribeBean();
     SecretariaMeioAmbiente sec;
 //    Subscriber s;
 
@@ -48,12 +48,12 @@ public class SubscriberTest {
 
     @Test
     public void testSubscribeBean() {
-//        sb.setPort(11);
-//        assertEquals(11, sb.getPort());
-//        sb.setAndress("endereco");
-//        assertEquals("endereco", sb.getAndress());
-//        sb.setTopic("topico");
-//        assertEquals("topico", sb.getTopic());
+        sb.setPort(11);
+        assertEquals(11, sb.getPort());
+        sb.setAndress("endereco");
+        assertEquals("endereco", sb.getAndress());
+        sb.setTopic("topico");
+        assertEquals("topico", sb.getTopic());
 
     }
 
