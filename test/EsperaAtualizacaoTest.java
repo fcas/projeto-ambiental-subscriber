@@ -69,7 +69,7 @@ public class EsperaAtualizacaoTest {
     //
     // @Test
     // public void hello() {}
-    
+    /*
     @Test
     public void testExtrairMsgFail() throws IOException{
 //      boolean thrown = false;
@@ -183,7 +183,7 @@ public class EsperaAtualizacaoTest {
 //
 //        assertTrue(passou);
 
-    }
+    }*/
     
     @Test
     public void testSubscribeBean() {
