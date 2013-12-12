@@ -85,34 +85,47 @@ public class SubscriberTest {
         sec.limpaTexto();
     }
 
-//    @Test
-//    public void testGuiChuvaAcida() {
-//        sec.exibirInformacao("1;acidRainMonitor;AQUI;teste");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("2;acidRainMonitor;AQUI;teste");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("3;acidRainMonitor;AQUI;teste");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("4;acidRainMonitor;AQUI;teste");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("1;acidRainMonitor;OUTRO;teste");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("2;acidRainMonitor;OUTRO;teste");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("3;acidRainMonitor;OUTRO;teste");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("4;acidRainMonitor;OUTRO;teste");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("1;acidRainMonitor;ACID_OFF;teste");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("2;acidRainMonitor;ACID_OFF;teste");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("3;acidRainMonitor;ACID_OFF;teste");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("4;acidRainMonitor;ACID_OFF;teste");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//    }
-//
+    @Test
+    public void testGuiChuvaAcida() {
+        sec.limpaTexto();
+        sec.exibirInformacao("1;acidRainMonitor;AQUI;teste");
+        assertEquals(sec.pegarTexto(), "Chuva Ácida na área 1\n");
+        sec.limpaTexto();
+        sec.exibirInformacao("2;acidRainMonitor;AQUI;teste");
+        assertEquals(sec.pegarTexto(), "Chuva Ácida na área 2\n");
+        sec.limpaTexto();
+        sec.exibirInformacao("3;acidRainMonitor;AQUI;teste");
+        assertEquals(sec.pegarTexto(), "Chuva Ácida na área 3\n");
+        sec.limpaTexto();
+        sec.exibirInformacao("4;acidRainMonitor;AQUI;teste");
+        assertEquals(sec.pegarTexto(), "Chuva Ácida na área 4\n");
+        sec.limpaTexto();
+        sec.exibirInformacao("1;acidRainMonitor;OUTRO;teste");
+        assertEquals(sec.pegarTexto(), "Chuva Ácida se movendo para a direção teste\n");
+        sec.limpaTexto();
+        sec.exibirInformacao("2;acidRainMonitor;OUTRO;teste");
+        assertEquals(sec.pegarTexto(), "Chuva Ácida se movendo para a direção teste\n");
+        sec.limpaTexto();
+        sec.exibirInformacao("3;acidRainMonitor;OUTRO;teste");
+        assertEquals(sec.pegarTexto(), "Chuva Ácida se movendo para a direção teste\n");
+        sec.limpaTexto();
+        sec.exibirInformacao("4;acidRainMonitor;OUTRO;teste");
+        assertEquals(sec.pegarTexto(), "Chuva Ácida se movendo para a direção teste\n");
+        sec.limpaTexto();
+        sec.exibirInformacao("1;acidRainMonitor;ACID_OFF;teste");
+        assertEquals(sec.pegarTexto(), "");
+        sec.limpaTexto();
+        sec.exibirInformacao("2;acidRainMonitor;ACID_OFF;teste");
+        assertEquals(sec.pegarTexto(), "");
+        sec.limpaTexto();
+        sec.exibirInformacao("3;acidRainMonitor;ACID_OFF;teste");
+        assertEquals(sec.pegarTexto(), "");
+        sec.limpaTexto();
+        sec.exibirInformacao("4;acidRainMonitor;ACID_OFF;teste");
+        assertEquals(sec.pegarTexto(), "");
+        sec.limpaTexto();
+    }
+
 //    @Test
 //    public void testGuiBarulho() {
 //        sec.exibirInformacao("1;noiseMonitor;NOISE_ON");
