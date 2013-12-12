@@ -19,9 +19,8 @@ import static org.junit.Assert.*;
  * @author felipe
  */
 public class SubscriberTest {
-    SubscribeBean sb = new SubscribeBean();
-    SecretariaMeioAmbiente sec = new SecretariaMeioAmbiente();
-    //Subscriber s = new AtualizaSubscriber("topico", sec);
+    SubscribeBean sb;
+    SecretariaMeioAmbiente sec;
     
     public SubscriberTest() {
     }
@@ -36,6 +35,8 @@ public class SubscriberTest {
     
     @Before
     public void setUp() {
+        sb = new SubscribeBean();
+        sec = new SecretariaMeioAmbiente();
     }
     
     @After
