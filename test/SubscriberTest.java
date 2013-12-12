@@ -43,6 +43,17 @@ public class SubscriberTest {
     public void tearDown() {
     }
 //    
+//    @Test
+//    public void testSubscribeBean(){
+//        sb.setPort(11);
+//        assertEquals(11, sb.getPort());
+//        sb.setAndress("endereco");
+//        assertEquals("endereco", sb.getAndress());
+//        sb.setTopic("topico");
+//        assertEquals("topico", sb.getTopic());
+//        
+//    }
+//    
 
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
