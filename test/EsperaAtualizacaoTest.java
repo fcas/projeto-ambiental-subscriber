@@ -102,11 +102,7 @@ public class EsperaAtualizacaoTest {
 //        assertTrue(thrown);
     }*/
     
-    @Test
-    public void testSubscriber(){
-        s = new AtualizaSubscriber("topico", new SecretariaMeioAmbiente());
-        
-    }
+    
     
     @Test
     public void testGuiChuva() {
