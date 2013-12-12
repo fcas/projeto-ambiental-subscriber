@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
  */
 public class SubscriberTest {
     SubscribeBean sb;
-//    SecretariaMeioAmbiente sec;
+    SecretariaMeioAmbiente sec;
     
     public SubscriberTest() {
     }
@@ -36,7 +36,7 @@ public class SubscriberTest {
     @Before
     public void setUp() {
         sb = new SubscribeBean();
-//        sec = new SecretariaMeioAmbiente();
+        sec = new SecretariaMeioAmbiente();
     }
     
     @After

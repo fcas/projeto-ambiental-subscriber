@@ -25,6 +25,10 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
      * Creates new form SecretariaMeioAmbiente
      */
     public SecretariaMeioAmbiente() {
+        inicio();
+    }
+    
+    public void inicio(){
         initComponents();
     }
 //
