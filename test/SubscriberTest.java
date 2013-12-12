@@ -61,21 +61,28 @@ public class SubscriberTest {
         sec.limpaTexto();
         sec.exibirInformacao("1;willRainMonitor;RAIN_ON");
         assertEquals(sec.pegarTexto(), "Chuva na área 1\n");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("2;willRainMonitor;RAIN_ON");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("3;willRainMonitor;RAIN_ON");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("4;willRainMonitor;RAIN_ON");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("1;willRainMonitor;RAIN_OFF");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("2;willRainMonitor;RAIN_OFF");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("3;willRainMonitor;RAIN_OFF");
-//        assertTrue(!sec.pegarTexto().equals(""));
-//        sec.exibirInformacao("4;willRainMonitor;RAIN_OFF");
-//        assertTrue(!sec.pegarTexto().equals(""));
+        sec.limpaTexto();
+        sec.exibirInformacao("2;willRainMonitor;RAIN_ON");
+        assertEquals(sec.pegarTexto(), "Chuva na área 2\n");
+        sec.limpaTexto();
+        sec.exibirInformacao("3;willRainMonitor;RAIN_ON");
+        assertEquals(sec.pegarTexto(), "Chuva na área 3\n");
+        sec.limpaTexto();
+        sec.exibirInformacao("4;willRainMonitor;RAIN_ON");
+        assertEquals(sec.pegarTexto(), "Chuva na área 4\n");
+        sec.limpaTexto();
+        sec.exibirInformacao("1;willRainMonitor;RAIN_OFF");
+        assertEquals(sec.pegarTexto(), "");
+        sec.limpaTexto();
+        sec.exibirInformacao("2;willRainMonitor;RAIN_OFF");
+        assertEquals(sec.pegarTexto(), "");
+        sec.limpaTexto();
+        sec.exibirInformacao("3;willRainMonitor;RAIN_OFF");
+        assertEquals(sec.pegarTexto(), "");
+        sec.limpaTexto();
+        sec.exibirInformacao("4;willRainMonitor;RAIN_OFF");
+        assertEquals(sec.pegarTexto(), "");
+        sec.limpaTexto();
     }
 
 //    @Test
