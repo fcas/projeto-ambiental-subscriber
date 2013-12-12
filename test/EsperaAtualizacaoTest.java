@@ -29,7 +29,7 @@ public class EsperaAtualizacaoTest {
 //    public Socket socket;
     
     //SecretariaMeioAmbiente sec = new SecretariaMeioAmbiente();
-    SubscribeBean sb = new SubscribeBean();
+    //SubscribeBean sb = new SubscribeBean();
     
     
     public EsperaAtualizacaoTest() {
