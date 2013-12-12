@@ -100,69 +100,69 @@ public class EsperaAtualizacaoTest {
     @Test
     public void testGuiChuva() {
         sec.exibirInformacao("1;willRainMonitor;RAIN_ON");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("2;willRainMonitor;RAIN_ON");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("3;willRainMonitor;RAIN_ON");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("4;willRainMonitor;RAIN_ON");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("1;willRainMonitor;RAIN_OFF");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("2;willRainMonitor;RAIN_OFF");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("3;willRainMonitor;RAIN_OFF");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("4;willRainMonitor;RAIN_OFF");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
     }
     
     @Test
     public void testGuiChuvaAcida() {
         sec.exibirInformacao("1;acidRainMonitor;AQUI;teste");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("2;acidRainMonitor;AQUI;teste");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("3;acidRainMonitor;AQUI;teste");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("4;acidRainMonitor;AQUI;teste");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("1;acidRainMonitor;OUTRO;teste");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("2;acidRainMonitor;OUTRO;teste");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("3;acidRainMonitor;OUTRO;teste");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("4;acidRainMonitor;OUTRO;teste");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("1;acidRainMonitor;ACID_OFF;teste");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("2;acidRainMonitor;ACID_OFF;teste");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("3;acidRainMonitor;ACID_OFF;teste");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("4;acidRainMonitor;ACID_OFF;teste");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
     }
     
     @Test
     public void testGuiBarulho() {
         sec.exibirInformacao("1;noiseMonitor;NOISE_ON");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("2;noiseMonitor;NOISE_ON");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("3;noiseMonitor;NOISE_ON");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("4;noiseMonitor;NOISE_ON");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("1;noiseMonitor;NOISE_OFF");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("2;noiseMonitor;NOISE_OFF");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("3;noiseMonitor;NOISE_OFF");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("4;noiseMonitor;NOISE_OFF");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
     }
     
     @Test
@@ -170,21 +170,21 @@ public class EsperaAtualizacaoTest {
         boolean passou = true;
         try {
             sec.exibirInformacao("1;pollutionMonitor;TRAFEGO_ON");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("2;pollutionMonitor;TRAFEGO_ON");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("3;pollutionMonitor;TRAFEGO_ON");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("4;pollutionMonitor;TRAFEGO_ON");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("1;pollutionMonitor;TRAFEGO_OFF");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("2;pollutionMonitor;TRAFEGO_OFF");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("3;pollutionMonitor;TRAFEGO_OFF");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
             sec.exibirInformacao("4;pollutionMonitor;TRAFEGO_OFF");
-            assertTrue(sec.pegarTexto()!="");
+            assertTrue(!sec.pegarTexto().equals(""));
 
             
         } catch (NullPointerException e) {
