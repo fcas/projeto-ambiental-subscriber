@@ -51,7 +51,7 @@ public class EsperaAtualizacaoTest {
     public void setUp() throws UnknownHostException, IOException {
         sb = new SubscribeBean(); 
         sec = new SecretariaMeioAmbiente();
-        s = new AtualizaSubscriber("topico", new SecretariaMeioAmbiente());
+        
 //        msg = new TratarMensagem() {
 //
 //            @Override
@@ -101,6 +101,13 @@ public class EsperaAtualizacaoTest {
 //        
 //        assertTrue(thrown);
     }*/
+    
+    @Test
+    public void testSubscriber(){
+        s = new AtualizaSubscriber("topico", new SecretariaMeioAmbiente());
+        
+    }
+    
     @Test
     public void testGuiChuva() {
         sec.exibirInformacao("1;willRainMonitor;RAIN_ON");
