@@ -129,24 +129,34 @@ public class SubscriberTest {
 
 //    @Test
 //    public void testGuiBarulho() {
+//        sec = new SecretariaMeioAmbiente();
+//        sec.limpaTexto();
 //        sec.exibirInformacao("1;noiseMonitor;NOISE_ON");
-//        assertTrue(!sec.pegarTexto().equals(""));
+//        assertEquals(sec.pegarTexto(), "Muito barulho fora do horário de 22:00 às 6:00 na area 1\n");
+//        sec.limpaTexto();
 //        sec.exibirInformacao("2;noiseMonitor;NOISE_ON");
-//        assertTrue(!sec.pegarTexto().equals(""));
+//        assertEquals(sec.pegarTexto(), "Muito barulho fora do horário de 22:00 às 6:00 na area 2\n");
+//        sec.limpaTexto();
 //        sec.exibirInformacao("3;noiseMonitor;NOISE_ON");
-//        assertTrue(!sec.pegarTexto().equals(""));
+//        assertEquals(sec.pegarTexto(), "Muito barulho fora do horário de 22:00 às 6:00 na area 3\n");
+//        sec.limpaTexto();
 //        sec.exibirInformacao("4;noiseMonitor;NOISE_ON");
-//        assertTrue(!sec.pegarTexto().equals(""));
+//        assertEquals(sec.pegarTexto(), "Muito barulho fora do horário de 22:00 às 6:00 na area 4\n");
+//        sec.limpaTexto();
 //        sec.exibirInformacao("1;noiseMonitor;NOISE_OFF");
-//        assertTrue(!sec.pegarTexto().equals(""));
+//        assertEquals(sec.pegarTexto(), "");
+//        sec.limpaTexto();
 //        sec.exibirInformacao("2;noiseMonitor;NOISE_OFF");
-//        assertTrue(!sec.pegarTexto().equals(""));
+//        assertEquals(sec.pegarTexto(), "");
+//        sec.limpaTexto();
 //        sec.exibirInformacao("3;noiseMonitor;NOISE_OFF");
-//        assertTrue(!sec.pegarTexto().equals(""));
+//        assertEquals(sec.pegarTexto(), "");
+//        sec.limpaTexto();
 //        sec.exibirInformacao("4;noiseMonitor;NOISE_OFF");
-//        assertTrue(!sec.pegarTexto().equals(""));
+//        assertEquals(sec.pegarTexto(), "");
+//        sec.limpaTexto();
 //    }
-//
+
 //    @Test
 //    public void testGuiPoluicao() {
 //        boolean passou = true;

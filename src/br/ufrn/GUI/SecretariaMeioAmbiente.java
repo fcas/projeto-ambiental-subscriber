@@ -404,7 +404,7 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
         String hora = df.format(new Date());
 
         if (valores[2].equals("NOISE_ON")) {
-            noiseOn(valores, hora);
+            noiseOn(valores, "3");
         } else if (valores[2].equals("NOISE_OFF")) {
             noiseOff(valores);
         }
