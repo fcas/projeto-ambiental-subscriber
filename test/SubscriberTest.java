@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
  * @author felipe
  */
 public class SubscriberTest {
-//    SubscribeBean sb;
+    SubscribeBean sb;
 //    SecretariaMeioAmbiente sec;
     
     public SubscriberTest() {
@@ -35,7 +35,7 @@ public class SubscriberTest {
     
     @Before
     public void setUp() {
-//        sb = new SubscribeBean();
+        sb = new SubscribeBean();
 //        sec = new SecretariaMeioAmbiente();
     }
     
@@ -43,17 +43,17 @@ public class SubscriberTest {
     public void tearDown() {
     }
 //    
-//    @Test
-//    public void testSubscribeBean(){
-//        sb.setPort(11);
-//        assertEquals(11, sb.getPort());
-//        sb.setAndress("endereco");
-//        assertEquals("endereco", sb.getAndress());
-//        sb.setTopic("topico");
-//        assertEquals("topico", sb.getTopic());
-//        
-//    }
-//    
+    @Test
+    public void testSubscribeBean(){
+        sb.setPort(11);
+        assertEquals(11, sb.getPort());
+        sb.setAndress("endereco");
+        assertEquals("endereco", sb.getAndress());
+        sb.setTopic("topico");
+        assertEquals("topico", sb.getTopic());
+        
+    }
+    
 
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
