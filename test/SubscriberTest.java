@@ -83,6 +83,7 @@ public class SubscriberTest {
         sec.exibirInformacao("4;willRainMonitor;RAIN_OFF");
         assertEquals(sec.pegarTexto(), "");
         sec.limpaTexto();
+        fail();
     }
 
     @Test
@@ -126,6 +127,8 @@ public class SubscriberTest {
         sec.exibirInformacao("4;acidRainMonitor;ACID_OFF;teste");
         assertEquals(sec.pegarTexto(), "");
         sec.limpaTexto();
+        
+        fail();
     }
 
 //    @Test
