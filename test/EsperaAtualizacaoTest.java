@@ -3,9 +3,11 @@
  * and open the template in the editor.
  */
 
+import br.ufrn.GUI.AtualizaSubscriber;
 import br.ufrn.GUI.SecretariaMeioAmbiente;
 import br.ufrn.subscriber.EsperarAtualizacao;
 import br.ufrn.subscriber.SubscribeBean;
+import br.ufrn.subscriber.Subscriber;
 import br.ufrn.subscriber.TratarMensagem;
 import java.io.IOException;
 import java.net.Socket;
@@ -30,6 +32,7 @@ public class EsperaAtualizacaoTest {
     
     SecretariaMeioAmbiente sec;
     SubscribeBean sb;
+    Subscriber s;
     
     
     public EsperaAtualizacaoTest() {
@@ -48,6 +51,7 @@ public class EsperaAtualizacaoTest {
     public void setUp() throws UnknownHostException, IOException {
         sb = new SubscribeBean(); 
         sec = new SecretariaMeioAmbiente();
+        s = new AtualizaSubscriber("topico", sec);
 //        msg = new TratarMensagem() {
 //
 //            @Override
