@@ -28,7 +28,7 @@ public class EsperaAtualizacaoTest {
 //    public EsperarAtualizacao ea; 
 //    public Socket socket;
     
-    SecretariaMeioAmbiente sec = new SecretariaMeioAmbiente();
+    //SecretariaMeioAmbiente sec = new SecretariaMeioAmbiente();
     SubscribeBean sb = new SubscribeBean();
     
     
@@ -183,7 +183,7 @@ public class EsperaAtualizacaoTest {
 //
 //        assertTrue(passou);
 
-    }*/
+    }
     
     @Test
     public void testSubscribeBean() {
@@ -194,5 +194,5 @@ public class EsperaAtualizacaoTest {
         sb.setTopic("topico");
         assertEquals("topico", sb.getTopic());
 
-    }
+    }*/
 }
