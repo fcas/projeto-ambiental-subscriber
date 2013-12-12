@@ -21,7 +21,6 @@ import static org.junit.Assert.*;
 public class SubscriberTest {
 
     SubscribeBean sb;
-    SecretariaMeioAmbiente sec;
 
     public SubscriberTest() {
     }
@@ -57,6 +56,7 @@ public class SubscriberTest {
 
     @Test
     public void testGuiChuva() {
+    SecretariaMeioAmbiente sec;
         sec = new SecretariaMeioAmbiente();
         sec.limpaTexto();
         sec.exibirInformacao("1;willRainMonitor;RAIN_ON");
@@ -87,6 +87,7 @@ public class SubscriberTest {
 
     @Test
     public void testGuiChuvaAcida() {
+    SecretariaMeioAmbiente sec;
         sec = new SecretariaMeioAmbiente();
         sec.limpaTexto();
         sec.exibirInformacao("1;acidRainMonitor;AQUI;teste");
