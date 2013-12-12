@@ -44,17 +44,17 @@ public class SubscriberTest {
     public void tearDown() {
     }
 //    
-
-    @Test
-    public void testSubscribeBean() {
-        sb.setPort(11);
-        assertEquals(11, sb.getPort());
-        sb.setAndress("endereco");
-        assertEquals("endereco", sb.getAndress());
-        sb.setTopic("topico");
-        assertEquals("topico", sb.getTopic());
-
-    }
+//
+//    @Test
+//    public void testSubscribeBean() {
+//        sb.setPort(11);
+//        assertEquals(11, sb.getPort());
+//        sb.setAndress("endereco");
+//        assertEquals("endereco", sb.getAndress());
+//        sb.setTopic("topico");
+//        assertEquals("topico", sb.getTopic());
+//
+//    }
 
     @Test
     public void testGuiChuva() {
