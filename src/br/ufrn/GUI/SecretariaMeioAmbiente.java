@@ -28,461 +28,461 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
         initComponents();
     }
 
-//    public void trafegoOn(String valores[]) {
-//        if (valores[0].equals(Integer.toString(1))) {
-//            labelCarroA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
-//            Texto = Texto + "Quantidade de carros muito grande na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta fluxo de veiculos
-//        } else if (valores[0].equals(Integer.toString(2))) {
-//            labelCarroA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
-//            Texto = Texto + "Quantidade de carros muito grande na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta fluxo de veiculos
-//        } else if (valores[0].equals(Integer.toString(3))) {
-//            labelCarroA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
-//            Texto = Texto + "Quantidade de carros muito grande na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta fluxo de veiculos
-//        } else if (valores[0].equals(Integer.toString(4))) {
-//            labelCarroA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
-//            Texto = Texto + "Quantidade de carros muito grande na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta fluxo de veiculos
-//        }
-//    }
-//
-//    public void trafegoOff(String valores[]) {
-//        //Seta o icone do trafego pra OFF em cada area
-//
-//        if (valores[0].equals(Integer.toString(1))) {
-//            labelCarroA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
-//        } else if (valores[0].equals(Integer.toString(2))) {
-//            labelCarroA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
-//        } else if (valores[0].equals(Integer.toString(3))) {
-//            labelCarroA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
-//        } else if (valores[0].equals(Integer.toString(4))) {
-//            labelCarroA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
-//        }
-//    }
-//
-//    public void poluicaoArea1(String valores[]) {
-//        if (valores[2].equals("BOA")) {
-//            labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("REGULAR")) {
-//            labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("INADEQUADA")) {
-//            labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("MA")) {
-//            labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("PESSIMA")) {
-//            labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        }
-//    }
-//
-//    public void poluicaoArea2(String valores[]) {
-//        if (valores[2].equals("BOA")) {
-//            labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("REGULAR")) {
-//            labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("INADEQUADA")) {
-//            labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("MA")) {
-//            labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("PESSIMA")) {
-//            labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        }
-//    }
-//
-//    public void poluicaoArea3(String valores[]) {
-//        if (valores[2].equals("BOA")) {
-//            labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("REGULAR")) {
-//            labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("INADEQUADA")) {
-//            labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("MA")) {
-//            labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("PESSIMA")) {
-//            labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        }
-//    }
-//
-//    public void poluicaoArea4(String valores[]) {
-//        if (valores[2].equals("BOA")) {
-//            labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("REGULAR")) {
-//            labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("INADEQUADA")) {
-//            labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("MA")) {
-//            labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        } else if (valores[2].equals("PESSIMA")) {
-//            labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
-//            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//        }
-//    }
-//
-//    public void rainOn(String valores[]) {
-//        if (valores[0].equals(Integer.toString(1))) {
-//            labelNuvChuA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
-//            Texto = Texto + "Chuva na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta vai chover
-//        }
-//        if (valores[0].equals(Integer.toString(2))) {
-//            labelNuvChuA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
-//            Texto = Texto + "Chuva na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta vai chover
-//        }
-//        if (valores[0].equals(Integer.toString(3))) {
-//            labelNuvChuA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
-//            Texto = Texto + "Chuva na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta vai chover
-//        }
-//        if (valores[0].equals(Integer.toString(4))) {
-//            labelNuvChuA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
-//            Texto = Texto + "Chuva na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta vai chover
-//        }
-//    }
-//
-//    public void rainOff(String valores[]) {
-//        //setar o icone OFF de chuva em todas as areas
-//        if (valores[0].equals(Integer.toString(1))) {
-//            labelNuvChuA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
-//            //seta vai chover
-//        }
-//        if (valores[0].equals(Integer.toString(2))) {
-//            labelNuvChuA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
-//            //seta vai chover
-//        }
-//        if (valores[0].equals(Integer.toString(3))) {
-//            labelNuvChuA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
-//            //seta vai chover
-//        }
-//        if (valores[0].equals(Integer.toString(4))) {
-//            labelNuvChuA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
-//            //seta vai chover
-//        }
-//    }
-//
-//    public void acidAqui(String valores[]) {
-//        if (valores[0].equals(Integer.toString(1))) {
-//            labelNuvAciA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
-//            Texto = Texto + "Chuva Ácida na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta que tem chuva acida da area
-//        }
-//        if (valores[0].equals(Integer.toString(2))) {
-//            labelNuvAciA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
-//            Texto = Texto + "Chuva Ácida na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta que tem chuva acida da area
-//        }
-//        if (valores[0].equals(Integer.toString(3))) {
-//            labelNuvAciA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
-//            Texto = Texto + "Chuva Ácida na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta que tem chuva acida da area
-//        }
-//        if (valores[0].equals(Integer.toString(4))) {
-//            labelNuvAciA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
-//            Texto = Texto + "Chuva Ácida na área " + valores[0] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta que tem chuva acida da area
-//        }
-//    }
-//
-//    public void acidOutro(String valores[]) {
-//        if (valores[0].equals(Integer.toString(1))) {
-//            labelNuvMovA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
-//            Texto = Texto + "Chuva Ácida se movendo para a direção " + valores[3] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta que pode ter chuva acida em outra area
-//
-//        }
-//        if (valores[0].equals(Integer.toString(2))) {
-//            labelNuvMovA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
-//            Texto = Texto + "Chuva Ácida se movendo para a direção " + valores[3] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta que pode ter chuva acida em outra area
-//
-//        }
-//        if (valores[0].equals(Integer.toString(3))) {
-//            labelNuvMovA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
-//            Texto = Texto + "Chuva Ácida se movendo para a direção " + valores[3] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta que pode ter chuva acida em outra area
-//
-//        }
-//        if (valores[0].equals(Integer.toString(4))) {
-//            labelNuvMovA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
-//            Texto = Texto + "Chuva Ácida se movendo para a direção " + valores[3] + "\n";
-//            jTextArea1.setText("" + Texto);
-//            //seta que pode ter chuva acida em outra area
-//
-//        }
-//    }
-//
-//    public void acidOff(String valores[]) {
-//        //setar o icone de chuva acida OFF para cada area
-//        if (valores[0].equals(Integer.toString(1))) {
-//            labelNuvMovA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png")));
-//            labelNuvAciA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
-//            //seta que pode ter chuva acida em outra area
-//        }
-//        if (valores[0].equals(Integer.toString(2))) {
-//            labelNuvMovA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png")));
-//            labelNuvAciA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
-//            //seta que pode ter chuva acida em outra area
-//        }
-//        if (valores[0].equals(Integer.toString(3))) {
-//            labelNuvMovA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png")));
-//            labelNuvAciA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
-//            //seta que pode ter chuva acida em outra area
-//        }
-//        if (valores[0].equals(Integer.toString(4))) {
-//            labelNuvMovA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png")));
-//            labelNuvAciA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
-//            //seta que pode ter chuva acida em outra area
-//        }
-//    }
-//
-//    public void noiseOn(String valores[], String hora) {
-//        if (valores[0].equals(Integer.toString(1))) {
-//            if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
-//                labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-//                Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
-//                jTextArea1.setText("" + Texto);
-//                //seta que o barulho esta alem do permitido
-//                //OBS: somente setar esse icone se a hora for entre: 22h e 6h
-//            }
-//        }
-//
-//        if (valores[0].equals(Integer.toString(2))) {
-//            if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
-//                labelBuzinaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-//                Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
-//                jTextArea1.setText("" + Texto);
-//                //seta que o barulho esta alem do permitido
-//                //OBS: somente setar esse icone se a hora for entre: 22h e 6h
-//            }
-//        }
-//        if (valores[0].equals(Integer.toString(3))) {
-//            if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
-//                labelBuzinaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-//                Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
-//                jTextArea1.setText("" + Texto);
-//                //seta que o barulho esta alem do permitido
-//                //OBS: somente setar esse icone se a hora for entre: 22h e 6h
-//            }
-//        }
-//        if (valores[0].equals(Integer.toString(4))) {
-//            if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
-//                labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-//                Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
-//                jTextArea1.setText("" + Texto);
-//                //seta que o barulho esta alem do permitido
-//                //OBS: somente setar esse icone se a hora for entre: 22h e 6h
-//            }
-//        }
-//    }
-//
-//    public void noiseOff(String valores[]) {
-//        //setar os icones de noise OFF para cada area
-//        if (valores[0].equals(Integer.toString(1))) {
-//            labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
-//        }
-//        if (valores[0].equals(Integer.toString(2))) {
-//            labelBuzinaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
-//        }
-//        if (valores[0].equals(Integer.toString(3))) {
-//            labelBuzinaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
-//        }
-//        if (valores[0].equals(Integer.toString(4))) {
-//            labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
-//        }
-//    }
-//
-//    public void monitorDePoluicao(String valores[]) {
-//        if (valores[2].equals("TRAFEGO_ON")) {
-//            trafegoOn(valores);
-//        } else if (valores[2].equals("TRAFEGO_OFF")) {
-//            trafegoOff(valores);
-//        } else {
-//            if (valores[0].equals(Integer.toString(1))) {
-//                poluicaoArea1(valores);
-//                //seta o nivel de poluicao com: valores[2]
-//            }
-//        }
-//        if (valores[0].equals(Integer.toString(2))) {
-//            poluicaoArea2(valores);
-//            //seta o nivel de poluicao com: valores[2]
-//        }
-//        if (valores[0].equals(Integer.toString(3))) {
-//            poluicaoArea3(valores);
-//            //seta o nivel de poluicao com: valores[2]
-//        }
-//        if (valores[0].equals(Integer.toString(4))) {
-//            poluicaoArea4(valores);
-//            //seta o nivel de poluicao com: valores[2]
-//        }
-//    }
-//
-//    public void monitorDeChuva(String valores[]) {
-//        if (valores[2].equals("RAIN_ON")) {
-//            rainOn(valores);
-//        } else if (valores[2].equals("RAIN_OFF")) {
-//            rainOff(valores);
-//        }
-//    }
-//
-//    public void monitorDeChuvaAcida(String valores[]) {
-//        if (valores[2].equals("AQUI")) {
-//            acidAqui(valores);
-//        } else if (valores[2].equals("OUTRO")) {
-//            acidOutro(valores);
-//        } else if (valores[2].equals("ACID_OFF")) {
-//            acidOff(valores);
-//        }
-//    }
-//
-//    public void monitorDeBarulho(String valores[]) {
-//        DateFormat df = new SimpleDateFormat("H");
-//        String hora = df.format(new Date());
-//
-//        if (valores[2].equals("NOISE_ON")) {
-//            noiseOn(valores, hora);
-//        } else if (valores[2].equals("NOISE_OFF")) {
-//            noiseOff(valores);
-//        }
-//    }
-//
-//    public void exibirInformacao(String informacao) {
-//        String valores[] = informacao.split(";");
-//        //valores[0] = area
-//        //valores[1] = nome da function
-//        //valores[2] = estado do contexto ou informacao relevante
-//        //valores[3] = direção do vento
-//
-//        //===pollutionMonitor
-//        if (valores[1].equals("pollutionMonitor")) {
-//            monitorDePoluicao(valores);
-//        }
-//        //===willRainMonitor
-//        if (valores[1].equals("willRainMonitor")) {
-//            monitorDeChuva(valores);
-//        } //===acidRainMonitor
-//        else if (valores[1].equals("acidRainMonitor")) {
-//            monitorDeChuvaAcida(valores);
-//
-//        } //===noiseMonitor
-//        else if (valores[1].equals("noiseMonitor")) {
-//
-//            monitorDeBarulho(valores);
-//
-//            DateFormat df = new SimpleDateFormat("H");
-//            String hora = df.format(new Date());
-//
-//            if (valores[2].equals("NOISE_ON")) {
-//                if (valores[0].equals(Integer.toString(1))) {
-//                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
-//                        labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-//                        Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
-//                        jTextArea1.setText("" + Texto);
-//                        //seta que o barulho esta alem do permitido
-//                        //OBS: somente setar esse icone se a hora for entre: 22h e 6h
-//                    }
-//                }
-//
-//                if (valores[0].equals(Integer.toString(2))) {
-//                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
-//                        labelBuzinaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-//                        Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
-//                        jTextArea1.setText("" + Texto);
-//                        //seta que o barulho esta alem do permitido
-//                        //OBS: somente setar esse icone se a hora for entre: 22h e 6h
-//                    }
-//                }
-//                if (valores[0].equals(Integer.toString(3))) {
-//                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
-//                        labelBuzinaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-//                        Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
-//                        jTextArea1.setText("" + Texto);
-//                        //seta que o barulho esta alem do permitido
-//                        //OBS: somente setar esse icone se a hora for entre: 22h e 6h
-//                    }
-//                }
-//                if (valores[0].equals(Integer.toString(4))) {
-//                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
-//                        labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
-//                        Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
-//                        jTextArea1.setText("" + Texto);
-//                        //seta que o barulho esta alem do permitido
-//                        //OBS: somente setar esse icone se a hora for entre: 22h e 6h
-//                    }
-//                }
-//            } else if (valores[2].equals("NOISE_OFF")) {
-//                //setar os icones de noise OFF para cada area
-//                if (valores[0].equals(Integer.toString(1))) {
-//                    labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
-//                }
-//                if (valores[0].equals(Integer.toString(2))) {
-//                    labelBuzinaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
-//                }
-//                if (valores[0].equals(Integer.toString(3))) {
-//                    labelBuzinaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
-//                }
-//                if (valores[0].equals(Integer.toString(4))) {
-//                    labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
-//                }
-//            }
-//
-//        }
-//    }
+    public void trafegoOn(String valores[]) {
+        if (valores[0].equals(Integer.toString(1))) {
+            labelCarroA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
+            Texto = Texto + "Quantidade de carros muito grande na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta fluxo de veiculos
+        } else if (valores[0].equals(Integer.toString(2))) {
+            labelCarroA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
+            Texto = Texto + "Quantidade de carros muito grande na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta fluxo de veiculos
+        } else if (valores[0].equals(Integer.toString(3))) {
+            labelCarroA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
+            Texto = Texto + "Quantidade de carros muito grande na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta fluxo de veiculos
+        } else if (valores[0].equals(Integer.toString(4))) {
+            labelCarroA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carro.png")));
+            Texto = Texto + "Quantidade de carros muito grande na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta fluxo de veiculos
+        }
+    }
+
+    public void trafegoOff(String valores[]) {
+        //Seta o icone do trafego pra OFF em cada area
+
+        if (valores[0].equals(Integer.toString(1))) {
+            labelCarroA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
+        } else if (valores[0].equals(Integer.toString(2))) {
+            labelCarroA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
+        } else if (valores[0].equals(Integer.toString(3))) {
+            labelCarroA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
+        } else if (valores[0].equals(Integer.toString(4))) {
+            labelCarroA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/carroSem.png")));
+        }
+    }
+
+    public void poluicaoArea1(String valores[]) {
+        if (valores[2].equals("BOA")) {
+            labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("REGULAR")) {
+            labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("INADEQUADA")) {
+            labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("MA")) {
+            labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("PESSIMA")) {
+            labelNuvPolA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        }
+    }
+
+    public void poluicaoArea2(String valores[]) {
+        if (valores[2].equals("BOA")) {
+            labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("REGULAR")) {
+            labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("INADEQUADA")) {
+            labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("MA")) {
+            labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("PESSIMA")) {
+            labelNuvPolA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        }
+    }
+
+    public void poluicaoArea3(String valores[]) {
+        if (valores[2].equals("BOA")) {
+            labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("REGULAR")) {
+            labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("INADEQUADA")) {
+            labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("MA")) {
+            labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("PESSIMA")) {
+            labelNuvPolA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        }
+    }
+
+    public void poluicaoArea4(String valores[]) {
+        if (valores[2].equals("BOA")) {
+            labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado1.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("REGULAR")) {
+            labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado2.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("INADEQUADA")) {
+            labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado3.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("MA")) {
+            labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado4.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        } else if (valores[2].equals("PESSIMA")) {
+            labelNuvPolA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemVerdeEstado5.png")));
+            Texto = Texto + "Qualidade do ar na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+        }
+    }
+
+    public void rainOn(String valores[]) {
+        if (valores[0].equals(Integer.toString(1))) {
+            labelNuvChuA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
+            Texto = Texto + "Chuva na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta vai chover
+        }
+        if (valores[0].equals(Integer.toString(2))) {
+            labelNuvChuA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
+            Texto = Texto + "Chuva na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta vai chover
+        }
+        if (valores[0].equals(Integer.toString(3))) {
+            labelNuvChuA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
+            Texto = Texto + "Chuva na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta vai chover
+        }
+        if (valores[0].equals(Integer.toString(4))) {
+            labelNuvChuA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemChuva.png")));
+            Texto = Texto + "Chuva na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta vai chover
+        }
+    }
+
+    public void rainOff(String valores[]) {
+        //setar o icone OFF de chuva em todas as areas
+        if (valores[0].equals(Integer.toString(1))) {
+            labelNuvChuA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
+            //seta vai chover
+        }
+        if (valores[0].equals(Integer.toString(2))) {
+            labelNuvChuA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
+            //seta vai chover
+        }
+        if (valores[0].equals(Integer.toString(3))) {
+            labelNuvChuA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
+            //seta vai chover
+        }
+        if (valores[0].equals(Integer.toString(4))) {
+            labelNuvChuA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemChuva.png")));
+            //seta vai chover
+        }
+    }
+
+    public void acidAqui(String valores[]) {
+        if (valores[0].equals(Integer.toString(1))) {
+            labelNuvAciA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
+            Texto = Texto + "Chuva Ácida na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta que tem chuva acida da area
+        }
+        if (valores[0].equals(Integer.toString(2))) {
+            labelNuvAciA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
+            Texto = Texto + "Chuva Ácida na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta que tem chuva acida da area
+        }
+        if (valores[0].equals(Integer.toString(3))) {
+            labelNuvAciA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
+            Texto = Texto + "Chuva Ácida na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta que tem chuva acida da area
+        }
+        if (valores[0].equals(Integer.toString(4))) {
+            labelNuvAciA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemAcida.png")));
+            Texto = Texto + "Chuva Ácida na área " + valores[0] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta que tem chuva acida da area
+        }
+    }
+
+    public void acidOutro(String valores[]) {
+        if (valores[0].equals(Integer.toString(1))) {
+            labelNuvMovA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
+            Texto = Texto + "Chuva Ácida se movendo para a direção " + valores[3] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta que pode ter chuva acida em outra area
+
+        }
+        if (valores[0].equals(Integer.toString(2))) {
+            labelNuvMovA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
+            Texto = Texto + "Chuva Ácida se movendo para a direção " + valores[3] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta que pode ter chuva acida em outra area
+
+        }
+        if (valores[0].equals(Integer.toString(3))) {
+            labelNuvMovA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
+            Texto = Texto + "Chuva Ácida se movendo para a direção " + valores[3] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta que pode ter chuva acida em outra area
+
+        }
+        if (valores[0].equals(Integer.toString(4))) {
+            labelNuvMovA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/wind-cloud.png")));
+            Texto = Texto + "Chuva Ácida se movendo para a direção " + valores[3] + "\n";
+            jTextArea1.setText("" + Texto);
+            //seta que pode ter chuva acida em outra area
+
+        }
+    }
+
+    public void acidOff(String valores[]) {
+        //setar o icone de chuva acida OFF para cada area
+        if (valores[0].equals(Integer.toString(1))) {
+            labelNuvMovA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png")));
+            labelNuvAciA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
+            //seta que pode ter chuva acida em outra area
+        }
+        if (valores[0].equals(Integer.toString(2))) {
+            labelNuvMovA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png")));
+            labelNuvAciA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
+            //seta que pode ter chuva acida em outra area
+        }
+        if (valores[0].equals(Integer.toString(3))) {
+            labelNuvMovA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png")));
+            labelNuvAciA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
+            //seta que pode ter chuva acida em outra area
+        }
+        if (valores[0].equals(Integer.toString(4))) {
+            labelNuvMovA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/no-wind-cloud.png")));
+            labelNuvAciA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/NuvemSemAcida.png")));
+            //seta que pode ter chuva acida em outra area
+        }
+    }
+
+    public void noiseOn(String valores[], String hora) {
+        if (valores[0].equals(Integer.toString(1))) {
+            if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
+                labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
+                jTextArea1.setText("" + Texto);
+                //seta que o barulho esta alem do permitido
+                //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+            }
+        }
+
+        if (valores[0].equals(Integer.toString(2))) {
+            if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
+                labelBuzinaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
+                jTextArea1.setText("" + Texto);
+                //seta que o barulho esta alem do permitido
+                //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+            }
+        }
+        if (valores[0].equals(Integer.toString(3))) {
+            if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
+                labelBuzinaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
+                jTextArea1.setText("" + Texto);
+                //seta que o barulho esta alem do permitido
+                //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+            }
+        }
+        if (valores[0].equals(Integer.toString(4))) {
+            if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 6)) {
+                labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
+                jTextArea1.setText("" + Texto);
+                //seta que o barulho esta alem do permitido
+                //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+            }
+        }
+    }
+
+    public void noiseOff(String valores[]) {
+        //setar os icones de noise OFF para cada area
+        if (valores[0].equals(Integer.toString(1))) {
+            labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+        }
+        if (valores[0].equals(Integer.toString(2))) {
+            labelBuzinaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+        }
+        if (valores[0].equals(Integer.toString(3))) {
+            labelBuzinaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+        }
+        if (valores[0].equals(Integer.toString(4))) {
+            labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+        }
+    }
+
+    public void monitorDePoluicao(String valores[]) {
+        if (valores[2].equals("TRAFEGO_ON")) {
+            trafegoOn(valores);
+        } else if (valores[2].equals("TRAFEGO_OFF")) {
+            trafegoOff(valores);
+        } else {
+            if (valores[0].equals(Integer.toString(1))) {
+                poluicaoArea1(valores);
+                //seta o nivel de poluicao com: valores[2]
+            }
+        }
+        if (valores[0].equals(Integer.toString(2))) {
+            poluicaoArea2(valores);
+            //seta o nivel de poluicao com: valores[2]
+        }
+        if (valores[0].equals(Integer.toString(3))) {
+            poluicaoArea3(valores);
+            //seta o nivel de poluicao com: valores[2]
+        }
+        if (valores[0].equals(Integer.toString(4))) {
+            poluicaoArea4(valores);
+            //seta o nivel de poluicao com: valores[2]
+        }
+    }
+
+    public void monitorDeChuva(String valores[]) {
+        if (valores[2].equals("RAIN_ON")) {
+            rainOn(valores);
+        } else if (valores[2].equals("RAIN_OFF")) {
+            rainOff(valores);
+        }
+    }
+
+    public void monitorDeChuvaAcida(String valores[]) {
+        if (valores[2].equals("AQUI")) {
+            acidAqui(valores);
+        } else if (valores[2].equals("OUTRO")) {
+            acidOutro(valores);
+        } else if (valores[2].equals("ACID_OFF")) {
+            acidOff(valores);
+        }
+    }
+
+    public void monitorDeBarulho(String valores[]) {
+        DateFormat df = new SimpleDateFormat("H");
+        String hora = df.format(new Date());
+
+        if (valores[2].equals("NOISE_ON")) {
+            noiseOn(valores, hora);
+        } else if (valores[2].equals("NOISE_OFF")) {
+            noiseOff(valores);
+        }
+    }
+
+    public void exibirInformacao(String informacao) {
+        String valores[] = informacao.split(";");
+        //valores[0] = area
+        //valores[1] = nome da function
+        //valores[2] = estado do contexto ou informacao relevante
+        //valores[3] = direção do vento
+
+        //===pollutionMonitor
+        if (valores[1].equals("pollutionMonitor")) {
+            monitorDePoluicao(valores);
+        }
+        //===willRainMonitor
+        if (valores[1].equals("willRainMonitor")) {
+            monitorDeChuva(valores);
+        } //===acidRainMonitor
+        else if (valores[1].equals("acidRainMonitor")) {
+            monitorDeChuvaAcida(valores);
+
+        } //===noiseMonitor
+        else if (valores[1].equals("noiseMonitor")) {
+
+            monitorDeBarulho(valores);
+
+            DateFormat df = new SimpleDateFormat("H");
+            String hora = df.format(new Date());
+
+            if (valores[2].equals("NOISE_ON")) {
+                if (valores[0].equals(Integer.toString(1))) {
+                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
+                        labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                        Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
+                        jTextArea1.setText("" + Texto);
+                        //seta que o barulho esta alem do permitido
+                        //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+                    }
+                }
+
+                if (valores[0].equals(Integer.toString(2))) {
+                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
+                        labelBuzinaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                        Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
+                        jTextArea1.setText("" + Texto);
+                        //seta que o barulho esta alem do permitido
+                        //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+                    }
+                }
+                if (valores[0].equals(Integer.toString(3))) {
+                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
+                        labelBuzinaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                        Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
+                        jTextArea1.setText("" + Texto);
+                        //seta que o barulho esta alem do permitido
+                        //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+                    }
+                }
+                if (valores[0].equals(Integer.toString(4))) {
+                    if ((Integer.parseInt(hora) >= 22 && Integer.parseInt(hora) <= 24) || (Integer.parseInt(hora) >= 0 && Integer.parseInt(hora) < 7)) {
+                        labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/Buzina.png")));
+                        Texto = Texto + "Muito barulho fora do horário de 22:00 às 6:00 na area " + valores[0] + "\n";
+                        jTextArea1.setText("" + Texto);
+                        //seta que o barulho esta alem do permitido
+                        //OBS: somente setar esse icone se a hora for entre: 22h e 6h
+                    }
+                }
+            } else if (valores[2].equals("NOISE_OFF")) {
+                //setar os icones de noise OFF para cada area
+                if (valores[0].equals(Integer.toString(1))) {
+                    labelBuzinaA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+                }
+                if (valores[0].equals(Integer.toString(2))) {
+                    labelBuzinaA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+                }
+                if (valores[0].equals(Integer.toString(3))) {
+                    labelBuzinaA3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+                }
+                if (valores[0].equals(Integer.toString(4))) {
+                    labelBuzinaA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufrn/imagens/SemBuzina.png")));
+                }
+            }
+
+        }
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.

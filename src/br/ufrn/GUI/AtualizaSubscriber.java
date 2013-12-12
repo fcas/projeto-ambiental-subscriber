@@ -27,6 +27,6 @@ public class AtualizaSubscriber extends Subscriber {
 
     @Override
     public void tratarMensagem(String mensagem) {
-        //subscriber.exibirInformacao(mensagem);
+        subscriber.exibirInformacao(mensagem);
     }
 }
