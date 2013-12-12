@@ -23,8 +23,8 @@ public class EsperarAtualizacao extends Thread {
     public EsperarAtualizacao(int porta, TratarMensagem tratarMensagem) {
         try {
             ServerSocket = new ServerSocket(porta);
-        } catch (IOException ex) {
-            Logger.getLogger(EsperarAtualizacao.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            
         }
 
         this.tratarMensagem = tratarMensagem;
