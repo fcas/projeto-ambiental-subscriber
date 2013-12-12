@@ -44,11 +44,11 @@ public class EsperaAtualizacaoTest {
                 throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
             }
         };
-        ea = new EsperarAtualizacao(9000, msg);
+        ea = new EsperarAtualizacao(9001, msg);
         try {
           socket = new Socket("localhost", 8080);
         } catch (Exception e) {
-        }
+        } 
 
     }
     
