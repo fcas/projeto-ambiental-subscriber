@@ -29,7 +29,7 @@ public class EsperaAtualizacaoTest {
 //    public Socket socket;
     
     //SecretariaMeioAmbiente sec = new SecretariaMeioAmbiente();
-    //SubscribeBean sb = new SubscribeBean();
+    SubscribeBean sb;
     
     
     public EsperaAtualizacaoTest() {
@@ -46,6 +46,7 @@ public class EsperaAtualizacaoTest {
     
     @Before
     public void setUp() throws UnknownHostException, IOException {
+        sb = new SubscribeBean(); 
 //        msg = new TratarMensagem() {
 //
 //            @Override
@@ -183,7 +184,16 @@ public class EsperaAtualizacaoTest {
 //
 //        assertTrue(passou);
 
-    }
+    }*/
     
-    */
+    @Test
+    public void testSubscribeBean() {
+        sb.setPort(11);
+        assertEquals(11, sb.getPort());
+        sb.setAndress("endereco");
+        assertEquals("endereco", sb.getAndress());
+        sb.setTopic("topico");
+        assertEquals("topico", sb.getTopic());
+
+    }
 }
