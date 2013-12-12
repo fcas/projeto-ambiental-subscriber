@@ -37,7 +37,6 @@ public class SubscriberTest {
     @Before
     public void setUp() {
         sb = new SubscribeBean();
-        sec = new SecretariaMeioAmbiente();
     }
 
     @After
@@ -58,6 +57,7 @@ public class SubscriberTest {
 
 //    @Test
 //    public void testGuiChuva() {
+//        sec = new SecretariaMeioAmbiente();
 //        sec.limpaTexto();
 //        sec.exibirInformacao("1;willRainMonitor;RAIN_ON");
 //        assertEquals(sec.pegarTexto(), "Chuva na área 1\n");
