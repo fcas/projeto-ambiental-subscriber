@@ -897,7 +897,7 @@ public class SecretariaMeioAmbiente extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1MouseClicked
 
     public String pegarTexto(){
-        return jTextArea1.getText();
+        return Texto;
     }
     /**
      * @param args the command line arguments
