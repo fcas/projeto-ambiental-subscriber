@@ -34,10 +34,11 @@ public class EsperaAtualizacaoTest {
     SubscribeBean sb;
     Subscriber s;
     
-    
+     
     public EsperaAtualizacaoTest() {
         
     }
+    
     
     @BeforeClass
     public static void setUpClass() {
